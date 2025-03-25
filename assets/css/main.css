@@ -2341,6 +2341,9 @@ top: -1px;
   .header .mega-category-menu {
     display: none;
   }
+  .container-bottom {
+    height: 0
+  }
 }
 
 .header .mega-category-menu .cat-button {

@@ -41,7 +41,7 @@
     <!-- Start Header Area -->
     <header class="header navbar-area">
         <!-- Start Topbar -->
-        <div class="topbar">
+        <div class="topbar" style="display: none;">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-4 col-12">
@@ -110,14 +110,18 @@
         <div class="header-middle">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-3 col-7">
+                    <!-- <div class="col-lg-3 col-md-3 col-7"> -->
+                        <div class="col-lg-3 col-md-3 col-7">
                         <!-- Start Header Logo -->
                         <a class="navbar-brand" href="index.html">
                             <img src="assets/images/logo/logo-retina1.png" alt="Logo">
                         </a>
                         <!-- End Header Logo -->
                     </div>
+                    <!--
                     <div class="col-lg-5 col-md-7 d-xs-none">
+                    -->
+                    <div class="col-lg-6 col-md-6 d-xs-none">                       
                         <!-- Start Main Menu Search -->
                         <div class="main-menu-search">
                             <!-- navbar search start -->
@@ -145,26 +149,45 @@
                         </div>
                         <!-- End Main Menu Search -->
                     </div>
-                    <div class="col-lg-4 col-md-2 col-5">
+                    
+                    <div class="col-lg-3 col-md-2 col-5">
                         <div class="middle-right-area">
+
                             <div class="nav-hotline">
                                 <!-- <i class="lni lni-phone"></i>
                                 <h3>Hotline:
                                     <span>(+100) 123 456 7890</span>
                                 </h3> -->
                             </div>
+                            
                             <div class="navbar-cart">
                                 <div class="wishlist">
+                                    <a href="javascript:void(0)">
+                                        <i class="lni lni-search-alt"></i>
+                                        <!-- <span class="total-items">0</span> -->
+                                    </a>
+                                </div>
+                                <!-- <div class="wishlist">
                                     <a href="javascript:void(0)">
                                         <i class="lni lni-heart"></i>
                                         <span class="total-items">0</span>
                                     </a>
+                                </div> -->
+                                <div class="wishlist">
+                                    <a class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="lni lni-menu"></i>
+                                    </a>
+                                    
+                                </a>
                                 </div>
-                                <div class="cart-items">
-                                    <a href="javascript:void(0)" class="main-btn">
+
+                                <div class="cart-items">                                    
+                                    <!-- <a href="javascript:void(0)" class="main-btn">
                                         <i class="lni lni-cart"></i>
                                         <span class="total-items">0</span>
-                                    </a>
+                                    </a> -->
                                     <!-- Shopping Item -->
                                     <!--
                                     <div class="shopping-item">
@@ -211,19 +234,22 @@
                                                 <a href="checkout.html" class="btn animate">Checkout</a>
                                             </div>
                                         </div>
-                                        -->
-                                    </div>
+                                    
+                                    </div> -->
                                     <!--/ End Shopping Item -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+
+                
+            </div> <!-- container -->
+        </div> <!-- header-middle -->
         <!-- End Header Middle -->
+
         <!-- Start Header Bottom -->
-        <div class="container">
+        <div class="container container-bottom">
             <div class="row align-items-center">
                 <div class="col-lg-8 col-md-6 col-12">
                     <div class="nav-inner">
@@ -232,20 +258,21 @@
                             <span class="cat-button"><i class="lni lni-menu"></i>도서 분류</span>
                             <ul class="sub-category">
                                 <li><a href="product-grids.html">성경공부
-                                    <!-- <i class="lni lni-chevron-right"></i> -->
+                        
+                                <i class="lni lni-chevron-right"></i>
                                 </a>
-                                    <!-- <ul class="inner-sub-category">
+                                    <ul class="inner-sub-category">
                                         <li><a href="product-grids.html">성경 공부</a></li>
                                         <li><a href="product-grids.html">Camcorders</a></li>
                                         <li><a href="product-grids.html">Camera Drones</a></li>
-                                        <li><a href="product-grids.html">Smart Watches</a></li>
+                                        <!-- <li><a href="product-grids.html">Smart Watches</a></li>
                                         <li><a href="product-grids.html">Headphones</a></li>
                                         <li><a href="product-grids.html">MP3 Players</a></li>
                                         <li><a href="product-grids.html">Microphones</a></li>
                                         <li><a href="product-grids.html">Chargers</a></li>
                                         <li><a href="product-grids.html">Batteries</a></li>
-                                        <li><a href="product-grids.html">Cables & Adapters</a></li>
-                                    </ul> -->
+                                        <li><a href="product-grids.html">Cables & Adapters</a></li> -->
+                                    </ul>
                                 </li>
                                 <li><a href="product-grids.html">성경암송</a></li>
                                 <li><a href="product-grids.html">경건의 시간</a></li>
@@ -259,13 +286,13 @@
                         <!-- End Mega Category Menu -->
                         <!-- Start Navbar -->
                         <nav class="navbar navbar-expand-lg">
-                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                            <!-- <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
-                            </button>
+                            </button> -->
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li class="nav-item">
@@ -342,12 +369,17 @@
                         <!-- End Navbar -->
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-6 col-12">
+                    
                     <!-- Start Nav Social -->
                     <div class="nav-social">
-                        <h5 class="title">Follow Us:</h5>
+                        <!-- <h5 class="title">Follow Us:</h5> -->
+                        <h5 class="title">
+                        <a href="contact.html" aria-label="Toggle navigation">한국 네비게이토 선교회</a>
+                        </h5>
                         <ul>
-                            <li>
+                            <!-- <li>
                                 <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
                             </li>
                             <li>
@@ -358,14 +390,17 @@
                             </li>
                             <li>
                                 <a href="javascript:void(0)"><i class="lni lni-skype"></i></a>
-                            </li>
+                            </li> -->
+                            
                         </ul>
                     </div>
                     <!-- End Nav Social -->
                 </div>
+
             </div>
         </div>
         <!-- End Header Bottom -->
+        
     </header>
     <!-- End Header Area -->
 
@@ -373,7 +408,8 @@
     <section class="hero-area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-12 custom-padding-right">
+                <!-- <div class="col-lg-8 col-12 custom-padding-right"> 원본 -->
+                <div class="col-lg-12 col-12 custom-padding-right">
                     <div class="slider-head">
                         <!-- Start Hero Slider -->
                         <div class="hero-slider">
@@ -415,38 +451,42 @@
                         <!-- End Hero Slider -->
                     </div>
                 </div>
+
+                <!-- 
                 <div class="col-lg-4 col-12">
                     <div class="row">
                         <div class="col-lg-12 col-md-6 col-12 md-custom-padding">
-                            <!-- Start Small Banner -->
+                            
                             <div class="hero-small-banner"
                                 style="background-image: url('assets/images/hero/nature_370x250.jpg');">
                                 <div class="content">
                                     <h2>
-                                        <!-- <span>New line required</span> -->
+                                        <span>New line required</span>
                                         하나님의 사랑안에서 예수님의 제자가 되십시오
                                     </h2>
-                                    <!-- <h3>$259.99</h3> -->
+                                    <h3>$259.99</h3>
                                 </div>
                             </div>
-                            <!-- End Small Banner -->
+                            
                         </div>
                         <div class="col-lg-12 col-md-6 col-12">
-                            <!-- Start Small Banner -->
+                            
                             <div class="hero-small-banner style2">
                                 <div class="content">
-                                    <!-- <h2>Weekly Sale!</h2> -->
+                                    <h2>Weekly Sale!</h2>
                                     <p>마11:28~29 수고하고 무거운 짐진 자들아 다 내게로 오라 내가 너희를 쉬게 하리라
                                         * 나는 마음이 온유하고 겸손하니 나의 멍에를 메고 내게 배우라 그러면 너희 마음이 쉼을 얻으리니</p>
-                                    <!-- <div class="button">
+                                    <div class="button">
                                         <a class="btn" href="product-grids.html">Shop Now</a>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Start Small Banner -->
+                           
                         </div>
                     </div>
                 </div>
+                -->
+
             </div>
         </div>
     </section>
