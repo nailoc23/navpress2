@@ -1970,11 +1970,21 @@ top: -1px;
   width: 100%;
 }
 
+/* 검색, 햄버거 아이콘 데스크,태블릿 안 보임 */
+.header .mobile-menu {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .header .main-menu-search {
     display: none;
   }
+  /* 검색, 햄버거 아이콘 모바일에서 보임 */
+  .header .mobile-menu {
+    display: block;
+  }
 }
+
 
 .header .main-menu-search .navbar-search {
   position: relative;
