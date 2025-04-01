@@ -1436,14 +1436,31 @@ top: -1px;
 }
 
 .header .topbar {
-  background-color: #081828;
+  background-color: #555555;
+  opacity: 0.6;
   padding: 18px 0;
+
+  /* 상단 검색 툴바 데스크탑에서 안보임 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+  z-index: 1000;
+}
+.topbar.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 767px) {
-  .header .topbar .top-left {
+  /* .header .topbar .top-left {
     text-align: center;
-  }
+  } */
 }
 
 .header .topbar .top-left .menu-top-link .select-position {
