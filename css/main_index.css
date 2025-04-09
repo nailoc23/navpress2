@@ -1,0 +1,257 @@
+.blog-section .single-blog {
+    margin-top: 30px;
+    overflow: hidden !important;
+    -webkit-box-shadow: 0px 0px 20px #00000012;
+            box-shadow: 0px 0px 20px #00000012;
+    padding: 8px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.blog-section .single-blog .blog-img {
+    overflow: hidden;
+}
+
+.blog-section .single-blog .blog-img a {
+width: 100%;
+}
+
+.blog-section .single-blog .blog-img img {
+width: 100%;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+.blog-section .single-blog:hover .blog-img img {
+-webkit-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+.blog-section .single-blog .blog-content {
+padding: 20px;
+}
+
+.blog-section .single-blog .blog-content .category {
+font-size: 14px;
+color: #888;
+display: inline-block;
+font-weight: 500;
+}
+
+.blog-section .single-blog .blog-content h4 {
+display: block;
+margin-top: 10px;
+line-height: 28px;
+}
+
+.blog-section .single-blog .blog-content h4 a {
+font-size: 19px;
+color: #081828;
+display: inline-block;
+font-weight: 700;
+}
+
+.blog-section .single-blog .blog-content h4 a:hover {
+color: #0167F3;
+}
+
+.blog-section .single-blog .blog-content p {
+display: block;
+margin-top: 20px;
+}
+
+.blog-section .single-blog .blog-content .button {
+margin-top: 25px;
+}
+
+.blog-section .single-blog .blog-content .button .btn {
+background-color: transparent;
+border: 1px solid #dfdfdf;
+color: #081828;
+}
+
+.blog-section .single-blog .blog-content .button .btn:hover {
+background-color: #0167F3;
+color: #fff;
+border-color: transparent;
+}
+
+.blog-list {
+background: #f9f9f9;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+.blog-list .pagination {
+    margin-top: 20px;
+}
+}
+
+.blog-list .single-blog {
+margin: 0;
+}
+
+.blog-list .single-blog {
+margin-bottom: 30px;
+}
+
+/* 상세 */
+/* News Details */
+.blog-single {
+background: #f9f9f9;
+}
+
+.blog-single .single-inner .main-content-head {
+border: 1px solid #eee;
+border-radius: 4px;
+overflow: hidden;
+}
+
+.blog-single .meta-information {
+background-color: #fff;
+padding: 20px 40px;
+}
+
+@media (max-width: 767px) {
+.blog-single .meta-information {
+padding: 12px 25px;
+}
+}
+
+.blog-single .meta-info {
+margin-top: 5px;
+}
+
+.blog-single .meta-info li {
+font-size: 14px;
+display: inline-block;
+margin-right: 15px;
+padding-right: 15px;
+position: relative;
+}
+
+@media (max-width: 767px) {
+.blog-single .meta-info li {
+margin-bottom: 5px;
+margin-right: 10px;
+}
+}
+
+.blog-single .meta-info li:last-child {
+margin: 0;
+padding: 0;
+}
+
+.blog-single .meta-info li a {
+color: #888;
+font-size: 14px;
+font-weight: 500;
+}
+
+.blog-single .meta-info li a i {
+display: inline-block;
+margin-right: 5px;
+font-size: 15px;
+}
+
+.blog-single .meta-info li a:hover {
+color: #0167F3;
+}
+
+.blog-single .post-thumbnils {
+position: relative;
+overflow: hidden;
+border-radius: 0;
+}
+
+.blog-single .post-thumbnils img {
+width: 100%;
+}
+
+.blog-single .detail-inner {
+background-color: #fff;
+padding: 40px;
+padding-top: 10px;
+}
+
+@media (max-width: 767px) {
+.blog-single .detail-inner {
+padding: 25px;
+padding-top: 10px;
+}
+}
+
+.blog-single .post-title {
+font-weight: 700;
+margin-bottom: 10px;
+line-height: 32px;
+display: inline-block;
+}
+
+@media (max-width: 767px) {
+.blog-single .post-title {
+line-height: 26px;
+}
+}
+
+.blog-single .post-title a {
+font-size: 22px;
+font-weight: 600;
+display: inline-block;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.blog-single .post-title a {
+font-size: 20px;
+}
+}
+
+@media (max-width: 767px) {
+.blog-single .post-title a {
+font-size: 18px;
+}
+}
+
+.blog-single .post-title a:hover {
+color: #0167F3;
+}
+
+.blog-single p {
+font-size: 14px;
+margin: 20px 0;
+line-height: 26px;
+}
+
+.blog-single p:first-child {
+margin-top: 0;
+}
+
+.blog-single h3 {
+font-size: 20px;
+margin-bottom: 20px;
+font-weight: 600;
+line-height: 28px;
+}
+
+.blog-single .list {
+margin: 30px 0;
+}
+
+.blog-single .list li {
+display: block;
+margin-bottom: 15px;
+position: relative;
+padding-left: 25px;
+}
+
+.blog-single .list li:last-child {
+margin-bottom: 0;
+}
+
+.blog-single .list li i {
+position: absolute;
+left: 0;
+top: 4px;
+color: #fff;
+font-size: 15px;
+color: #0167F3;
+}
