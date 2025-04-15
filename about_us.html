@@ -7,7 +7,7 @@
     <title>Navpress 템플릿-2</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon_imsi.png" />  <!-- images/favicon.svg -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon_imsi.png" />  <!-- images/favicon.svg -->  <!-- images/favicon.svg -->
 
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="css/tiny-slider.css" />
     <link rel="stylesheet" href="css/glightbox.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/main_index.css">
+    <link rel="stylesheet" href="css/about-us.css">
+
 </head>
 
 <body>
@@ -136,7 +137,7 @@
                                         <select id="select1">
                                             <option selected>통합검색</option>
                                             <option value="1">도서명</option>
-                                            <option value="2">저자명</option>                                            
+                                            <option value="2">저자명</option>
                                         </select>
                                     </div>
                                 </div>
@@ -264,8 +265,8 @@
                                 </a>
                                     <ul class="inner-sub-category">
                                         <li><a href="product-grids.html">성경 공부</a></li>
-                                        <li><a href="product-grids.html">성경 암송</a></li>
-                                        <li><a href="product-grids.html">성경 읽기</a></li>                                        
+                                        <li><a href="product-grids.html">Camcorders</a></li>
+                                        <li><a href="product-grids.html">Camera Drones</a></li>                                        
                                     </ul>
                                 </li>
                                 <li><a href="product-grids.html">성경암송</a></li>
@@ -348,14 +349,16 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="index.html" aria-label="Toggle navigation">블로그</a> 
-                                        <!-- <ul class="sub-menu collapse" id="submenu-1-6">
+                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                                            data-bs-target="#submenu-1-6" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">블로그</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-6">
                                             <li class="nav-item"><a href="blog-grid-sidebar.html">Blog Grid Sidebar</a>
                                             </li>
                                             <li class="nav-item"><a href="blog-single.html">Blog Single</a></li>
                                             <li class="nav-item"><a href="blog-single-sidebar.html">Blog Single
                                                     Sibebar</a></li>
-                                        </ul> -->
+                                        </ul>
                                     </li>
                                     <!--
                                     <li class="nav-item">
@@ -406,175 +409,187 @@
     <!-- End Header Area -->
 
     <!-- Start Hero Area -->
-    <section class="hero-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-12 custom-padding-right">
-                    <div class="slider-head">
-                        <!-- Start Hero Slider -->
-                        <div class="hero-slider">
-                            <!-- Start Single Slider -->
-                            <div class="single-slider"
-                                style="background-image: url(images/hero/nature4_800x500.jpg);">
-                                <div class="content">
-                                    <h2>
-                                        <!-- <span>No restocking fee ($35 savings)</span> -->
-                                        요한복음 3:16
-                                    </h2>
-                                    <p>하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니.
-                                        <!-- incididunt ut labore et dolore magna aliqua.</p>
-                                    <h3><span>Now Only</span> $320.99</h3> -->
-                                    <!-- <div class="button">
-                                        <a href="product-grids.html" class="btn">Shop Now</a>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <!-- End Single Slider -->
-                            <!-- Start Single Slider -->
-                            <div class="single-slider"
-                                style="background-image: url(images/hero/nature3_800x500.jpg);">
-                                <div class="content">
-                                    <h2>
-                                        <!-- <span>Big Sale Offer</span> -->
-                                        로마서 5:8
-                                    </h2>
-                                    <p>우리가 아직 죄인 되었을 때 그리스도께서 우리를 위하여 죽으심으로.</p>
-                                    <!-- <h3><span>Combo Only:</span> $590.00</h3> -->
-                                    <!-- <div class="button">
-                                        <a href="product-grids.html" class="btn">Shop Now</a>
-                                    </div> -->
-                                </div>
-                            </div>
-                            <!-- End Single Slider -->
-                        </div>
-                        <!-- End Hero Slider -->
-                    </div>
-                </div>
-
-                
-                <div class="col-lg-4 col-12">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-6 col-12 md-custom-padding">
-                            
-                            <div class="hero-small-banner"
-                                style="background-image: url('images/hero/nature_370x250.jpg');">
-                                <div class="content">
-                                    <h2>
-                                        <!-- <span>New line required</span> -->
-                                        하나님의 사랑안에서 예수님의 제자가 되십시오
-                                    </h2>
-                                    <!-- <h3>$259.99</h3> -->
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-12 col-md-6 col-12">
-                            
-                            <div class="hero-small-banner style2">
-                                <div class="content">
-                                    <!-- <h2>Weekly Sale!</h2> -->
-                                    <p>마11:28~29 수고하고 무거운 짐진 자들아 다 내게로 오라 내가 너희를 쉬게 하리라
-                                        * 나는 마음이 온유하고 겸손하니 나의 멍에를 메고 내게 배우라 그러면 너희 마음이 쉼을 얻으리니</p>
-                                    <!-- <div class="button">
-                                        <a class="btn" href="product-grids.html">Shop Now</a>
-                                    </div> -->
-                                </div>
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>
-               
-
-            </div>
-        </div>
-    </section>
     <!-- End Hero Area -->
 
-    <!-- Start Banner Area -->
-    <section class="banner section">
+    <!-- Start Breadcrumbs -->
+    <div class="breadcrumbs">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class="single-banner" style="background-image:url('images/banner/banner-3-bg.jpg')">
-                        <div class="content">
-                            <p><img src="images/banner/intro-use-1.jpg" alt="" srcset=""></p>
-                            <h2>네비게이토 성경공부</h2>
-                            <p>초신자부터 성숙한 그리스도인에게 이르기까지 
-                                각 단계에 맞는 다양한 성경 공부 방법과 성경 공부 
-                                교재를 소개하고 있습니다. 인간과 하나님, 
-                                그리스도인의 확신(5확신), 그리스도인의 생활연구 
-                                시리즈(SCL) 등이 많이 사용되고 있습니다.<br></p>
-                            <div class="button">
-                                <a href="product-grids.html" class="btn">더 보기</a>
-                            </div>
-                        </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="breadcrumbs-content">
+                        <h1 class="page-title">출판사 소개</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <ul class="breadcrumb-nav">
+                        <li><a href="index.html"><i class="lni lni-home"></i> Home</a></li>
+                        <li>출판사 소개</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+     <!-- Start About Area -->
+     <section class="about-us section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="content-left">
+                        <img src="images/about/capenter_tool.jpg" alt="#"> <!-- about-img.jpg -->
+                        <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
+                            class="glightbox video"><i class="lni lni-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <!-- content-1 start -->
+                    <div class="content-right">
+                        <h2>출판사 소개</h2>
+                        <br>
+                        <p>목수의 연장은 보기 좋게 놓아 두는 장식품이 아니라 나무를 자르고 깎고 다듬는 데 쓰는 도구입니다. 그래서 목수는 보기에 좋은 연장보다 쓰기에 좋은 연장을 찾습니다.
+                        </p>
+                        <p>
+                            네비게이토 출판사는 마치 목수의 손때 묻은 연장과 같이 주님의 일꾼들이 사용하기 좋은 책들을 만들어 왔습니다. 선교 현장과는 동떨어진 이론서보다는 제자의 삶과 사역을 직접적으로 다루는 실제적인 책을 펴내려고 항상 노력하고 있습니다.
+                        </p>
+                        <p>1973년 “그리스도인의 생활연구(SCL) 시리즈” 출간으로부터 시작해서 제자삼는 사역을 위한 다양한 성경공부 교재, 성경암송 카드와 자료들, 경건의 시간을 위한 안내서, 소책자 시리즈, 단행본, 전도지, 바인더, 수첩, 달력, 노트 및 카드 등을 공급해 왔습니다.
+                           </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <div class="col-lg-6 col-md-12 col-12">
+                    <!-- content-1 start -->
+                    <div class="content-right">
+                        <h2>네비게이토 출판사는 ...</h2>
+                        <br>
+                        <p>네비게이토 선교회의 문서선교를 담당하고 있습니다. 예수 그리스도께서는 가서 모든 족속으로 제자를 삼으라고 하셨습니다.
+                        </p>
+                        <p>
+                            저희는 이 지상사명에 순종하여 먼저 자신이 제자가 되고 또 다른 사람을 제자로 삼는 사역에 필요한 책과 교재를 출판 보급하고 있습니다. 네비게이토의 모든 책자는 그리스도인의 영적 성장을 도와 삶의 기초가 견고한 헌신된 제자로 성장하며, 나아가 성숙한 인격과 지도력을 갖춘 일꾼이 되도록 돕는 것을 목표로 하고 있습니다.
+                        </p>                        
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class="single-banner custom-responsive-margin"
-                        style="background-image:url('images/banner/banner-3-bg.jpg')">
-                        <div class="content">
-                            <p><img src="images/banner/intro-use-2.jpg" alt="" srcset=""></p>
-                            <h2>네비게이토 성경암송</h2>
-                            <p>초신자를 위한 5구절, 8구절을 시작으로 해서 성경암송의 대명사로 알려진 
-                                ‘네비게이토 주제별 성경암송 60구절’ 은 하나님의 말씀을 효과적이면서도 
-                                능력있게 사용하는 법을 가르쳐 줍니다. 
-                                암송에 대한 동기와 효과적인 암송 방법을 소개합니다.
-                            </p>
-                            <div class="button">
-                                <a href="product-grids.html" class="btn">더 보기</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-12">
-                    <div class="single-banner custom-responsive-margin"
-                        style="background-image:url('images/banner/banner-3-bg.jpg')">
-                        <div class="content">
-                            <p><img src="images/banner/intro-use-3.png" alt="" srcset=""></p>
-                            <h2>네비게이토 제자훈련</h2>
-                            <p>네비게이토는 학생, 직장인, 주부, 전문가 등 각계 각층에서 제자삼는 사역을 하고 있습니다. 성숙하고 
-                                헌신된 예수님의 제자로 성장하기 위해 거쳐야 하는 영적 훈련에 대해 소개하고 있으며 
-                                이를 위한 책자와 자료를 소개하고 있습니다.<br><br></p>
-                            <div class="button">
-                                <a href="product-grids.html" class="btn">더 보기</a>
-                            </div>
-                        </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="content-left">
+                        <img src="images/about/motto-logo.png" alt="#"> <!-- about-img.jpg -->
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Banner Area -->
+    <!-- End About Area -->
 
     <!-- Start Call Action Area -->
-    <section class="call-action section">
+    
+    <!-- End Call Action Area -->
+
+    <!-- Start Contact Area -->
+    <section id="contact-us" class="contact-us section">
         <div class="container">
-            <div class="row ">
-                <div class="col-lg-8 offset-lg-2 col-12">
-                    <div class="inner">
-                        <div class="content">
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s">
-                                [그리스도를 알고 그를 알게 하라]<br>
-                                <!-- Lite version of ShopGrids -->
-                            </h2>
-                            <p class="wow fadeInUp" data-wow-delay=".6s">
-                                네비게이토 출판사는 네비게이토 선교회의 문서선교를 담당하고 있습니다. <br>
-                                영적 성장을 돕는 서적과 자료들을 출판하여 모든 그리스도인으로 하여금 삶의 기초가 견고한 제자로 성장하고, <br>
-                                나아가 성숙한 인격과 지도력을 갖춘 일꾼이 되도록 돕고 있습니다.</p>
-                            <!-- <div class="button wow fadeInUp" data-wow-delay=".8s">
-                                <a href="javascript:void(0)" class="btn">Purchase Now</a>
-                            </div> -->
+            <div class="contact-head">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                            <h2>Contact Us</h2>
+                            <!-- <p>There are many variations of passages of Lorem
+                                Ipsum available, but the majority have suffered alteration in some form.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-12">
+                            <div class="single-info-head">
+                                <!-- Start Single Info -->
+                                <div class="single-info">
+                                    <i class="lni lni-map"></i>
+                                    <h3>구입처 주소</h3>
+                                    <ul>
+                                        <li>03998 서울시 마포구 성미산로 54, 2층 (성산1동 240-1)</li>
+                                    </ul>
+                                </div>
+                                <!-- End Single Info -->
+                                <!-- Start Single Info -->
+                                <div class="single-info">
+                                    <i class="lni lni-phone"></i>
+                                    <h3>전화 번호</h3>
+                                    <ul>
+                                        <li><a href="tel:023343305">02-334-3305(대표)</a> <a href="tel:023343037">02-334-3037(주문)</a></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                                <!-- End Single Info -->
+                                <!-- Start Single Info -->
+                                <div class="single-info">
+                                    <i class="lni lni-envelope"></i>
+                                    <h3>팩스 번호</h3>
+                                    <ul>
+                                        <li> : 02-334-3119</li>
+                                        <!-- <li><a href="mailto:career@shopgrids.com">career@shopgrids.com</a></li> -->
+                                    </ul>
+                                </div>
+                                <!-- End Single Info -->
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-12">
+                            <div class="contact-form-head">
+                                <div class="form-main">
+                                    <form class="form" method="post" action="assets/mail/mail.php">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-12">
+                                                <div class="form-group">
+                                                    <input name="name" type="text" placeholder="이름"
+                                                        required="required">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-12">
+                                                <div class="form-group">
+                                                    <input name="subject" type="text" placeholder="제목"
+                                                        required="required">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-12">
+                                                <div class="form-group">
+                                                    <input name="email" type="email" placeholder="이메일"
+                                                        required="required">
+                                                </div>
+                                            </div>
+                                            <!-- <div class="col-lg-6 col-md-6 col-12">
+                                                <div class="form-group">
+                                                    <input name="phone" type="text" placeholder="Your Phone"
+                                                        required="required">
+                                                </div>
+                                            </div> -->
+                                            <div class="col-12">
+                                                <div class="form-group message">
+                                                    <textarea name="message" placeholder="Your Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group button">
+                                                    <button type="submit" class="btn ">Submit Message</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Call Action Area -->
+    <!--/ End Contact Area -->
 
     <!-- 배너 이전 영역 -->
 
@@ -584,7 +599,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h2>새로 나온 책</h2>
+                        <h2>찾아 오시는 길</h2>
                         <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have
                             suffered alteration in some form.</p> -->
                     </div>
@@ -713,215 +728,15 @@
                     <!-- End Single Product -->
                 </div>
             
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Start Single Product -->
-                    <div class="single-product">
-                        <div class="product-image">
-                            <img src="images/products/book-5.jpg" alt="#">
-                            <div class="button">
-                                <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> Add to Cart</a>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <span class="category">단행본</span>
-                            <h4 class="title">
-                                <a href="product-grids.html">그리스도 제자 다섯가지 신념</a>
-                            </h4>
-                            <ul class="review">
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><span>5.0 Review(s)</span></li>
-                            </ul>
-                            <!-- <div class="price">
-                                <span>$350.00</span>
-                            </div> -->
-                        </div>
-                    </div>
-                    <!-- End Single Product -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Start Single Product -->
-                    <div class="single-product">
-                        <div class="product-image">
-                            <img src="images/products/book-6.jpg" alt="#">
-                            <div class="button">
-                                <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> Add to Cart</a>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <span class="category">바인더 및 용품</span>
-                            <h4 class="title">
-                                <a href="product-grids.html">Appointment Diary</a>
-                            </h4>
-                            <ul class="review">
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star"></i></li>
-                                <li><span>4.0 Review(s)</span></li>
-                            </ul>
-                            <!-- <div class="price">
-                                <span>$70.00</span>
-                            </div> -->
-                        </div>
-                    </div>
-                    <!-- End Single Product -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Start Single Product -->
-                    <div class="single-product">
-                        <div class="product-image">
-                            <img src="images/products/book-7.jpg" alt="#">
-                            <span class="sale-tag">신간</span>
-                            <div class="button">
-                                <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> Add to Cart</a>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <span class="category">바인더 및 용품</span>
-                            <h4 class="title">
-                                <a href="product-grids.html">Appointment Diary</a>
-                            </h4>
-                            <ul class="review">
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star"></i></li>
-                                <li><span>4.0 Review(s)</span></li>
-                            </ul>
-                            <!-- <div class="price">
-                                <span>$100.00</span>
-                                <span class="discount-price">$200.00</span>
-                            </div> -->
-                        </div>
-                    </div>
-                    <!-- End Single Product -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <!-- Start Single Product -->
-                    <div class="single-product">
-                        <div class="product-image">
-                            <img src="images/products/book-8.jpg" alt="#">
-                            <div class="button">
-                                <a href="product-details.html" class="btn"><i class="lni lni-cart"></i> Add to Cart</a>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <span class="category">바인더 및 용품</span>
-                            <h4 class="title">
-                                <a href="product-grids.html">Appointment Diary</a>
-                            </h4>
-                            <ul class="review">
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><i class="lni lni-star-filled"></i></li>
-                                <li><span>5.0 Review(s)</span></li>
-                            </ul>
-                            <!-- <div class="price">
-                                <span>$899.00</span>
-                            </div> -->
-                        </div>
-                    </div>
-                    <!-- End Single Product -->
-                </div>
+                
+                
             </div>
         </div>
     </section>
     <!-- End Trending Product Area -->
 
     <!-- Start Shipping Info -->
-    <section class="blog-section section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
-                        <h2>새로 올라온 글</h2>
-                        <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form.</p> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Blog -->
-                    <div class="single-blog">
-                        <div class="blog-img">
-                            <a href="blog-single-sidebar.html">
-                                <img src="images/blog/blog-11.jpg" alt="#">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <a class="category" href="javascript:void(0)">출판사</a>
-                            <h4>
-                                <a href="blog-single-sidebar.html">주님께서 주신 축복들</a>
-                            </h4>
-                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p> -->
-                            <div class="button">
-                                <a href="javascript:void(0)" class="btn">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Blog -->
-                    <div class="single-blog">
-                        <div class="blog-img">
-                            <a href="blog-single-sidebar.html">
-                                <img src="images/blog/blog-22.jpg" alt="#">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <a class="category" href="javascript:void(0)">출판사</a>
-                            <h4>
-                                <a href="blog-single-sidebar.html">성경적 리더십의 원리</a>
-                            </h4>
-                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p> -->
-                            <div class="button">
-                                <a href="javascript:void(0)" class="btn">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Blog -->
-                    <div class="single-blog">
-                        <div class="blog-img">
-                            <a href="blog-single-sidebar.html">
-                                <img src="images/blog/blog-33.jpg" alt="#">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <a class="category" href="javascript:void(0)">출판사</a>
-                            <h4>
-                                <a href="blog-single-sidebar.html">네비게이토 사역과 문서 선교
-                                </a>
-                            </h4>
-                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p> -->
-                            <div class="button">
-                                <a href="javascript:void(0)" class="btn">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
-                </div>
-            </div>
-
-            
-        </div>
-    </section>
+    
     <!-- End Shipping Info -->
 
     <!-- Start Footer Area -->
@@ -1095,46 +910,15 @@
     <script src="js/glightbox.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript">
-        //========= Hero Slider 
-        tns({
-            container: '.hero-slider',
-            slideBy: 'page',
-            autoplay: true,
-            autoplayButtonOutput: false,
-            mouseDrag: true,
-            gutter: 0,
-            items: 1,
-            nav: false,
-            controls: true,
-            controlsText: ['<i class="lni lni-chevron-left"></i>', '<i class="lni lni-chevron-right"></i>'],
-        });
 
-        //======== Brand Slider
-        /*
-        tns({
-            container: '.brands-logo-carousel',
-            autoplay: true,
-            autoplayButtonOutput: false,
-            mouseDrag: true,
-            gutter: 15,
-            nav: false,
-            controls: false,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                540: {
-                    items: 3,
-                },
-                768: {
-                    items: 5,
-                },
-                992: {
-                    items: 6,
-                }
-            }
+        //========= glightbox
+        GLightbox({
+            'href': 'https://www.youtube.com/watch?v=BRF-OcjaWwU',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
         });
-        */
 
         /* 모바일 상단 검색 */
         function openSearchBar() {
