@@ -1991,12 +1991,29 @@ top: -1px;
 .header .mobile-menu {
   display: none;
 }
+.header .search-menu {
+  display: none;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* 햄버거 아이콘 태블릿 보임, 검색 아이콘 안보임 */
+  .header .mobile-menu {
+    display: block;
+  }
+  .header .search-menu {
+    display: none;
+  }
+}
 
 @media (max-width: 767px) {
   .header .main-menu-search {
     display: none;
   }
   /* 검색, 햄버거 아이콘 모바일에서 보임 */
+  .header .search-menu {
+    display: block;
+  }
   .header .mobile-menu {
     display: block;
   }
