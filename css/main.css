@@ -2112,7 +2112,7 @@ top: -1px;
 
   .header .navbar-collapse {
     position: absolute;
-    top: 46px !important;
+    top: 0px !important;
     left: 0;
     width: 100%;
     background-color: #fff;
@@ -2230,7 +2230,7 @@ top: -1px;
 
   .header .navbar-collapse {
     position: absolute;
-    top: 46px !important;
+    top: 0px !important;
     left: 0;
     width: 100%;
     background-color: #fff;
