@@ -13,6 +13,11 @@
     width: 100%;
     border-radius: 4px;
   }
+
+  .about-us .content-left img#motto-logo {
+    width: 80%;
+    border-radius: 4px;
+  }
   
   .about-us .content-left .video {
     position: absolute;
