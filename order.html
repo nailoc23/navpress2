@@ -515,25 +515,42 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="accordion-item">
+                        <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    <span class="title">What are the product refund conditions?</span><i
+                                    <span class="title">5. 찾아오시는 길</span><i
                                         class="lni lni-plus"></i>
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute. non cupidatat skateboard dolor
-                                        brunch. Foosd truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt alqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. </p>
+                                    <p>문의 안내</p>
+                                    <p>
+                                        <i class="lni lni-checkmark-circle"></i> 저희 출판물을 제자삼는 사역에 어떻게 효과적으로 활용할 수 있는지 궁금한 점이 있으시면 전화나 이메일로 문의해 주시길 바랍니다. 성의껏 안내해 드리겠습니다.
+                                        <br>
+                                        <i class="lni lni-checkmark-circle"></i>도서 주문 관련 문의는 주문 전화(02-334-3037) 또는 주문 게시판을 이용해 주시면 감사하겠습니다.
+                                    </p>
+
+                                    <p>문의 전화 번호 및 안내 시간</p>
+                                    <p>
+                                        <i class="lni lni-checkmark-circle"></i> 02-334-3305 (평일 09:00~12:30, 13:30~18:00)
+                                        <br><i class="lni lni-checkmark-circle"></i>(수요일 토요일은 오전만 가능합니다)
+                                    </p>
+
+                                    <p>이메일 주소</p>
+                                    <p>
+                                        <i class="lni lni-checkmark-circle"></i> sales@navpress.co.kr
+                                    </p>
+
+                                    <div class="col-lg-12 col-md-12 col-12" id="map" style="width:100%;height:400px;"></div>
+                                    
+
                                 </div>
+                                
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -718,6 +735,17 @@
     <script src="js/tiny-slider.js"></script>
     <script src="js/glightbox.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=dfxkwc9qdj" type="text/javascript"></script>
+
+    <script>
+        var mapOptions = {
+            center: new naver.maps.LatLng(37.5590822,126.9115913),
+            zoom: 15
+        };
+      
+        var map = new naver.maps.Map('map', mapOptions);
+    </script>
 
     <script type="text/javascript">
 
