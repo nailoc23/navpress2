@@ -745,6 +745,17 @@
         };
       
         var map = new naver.maps.Map('map', mapOptions);
+
+        document.getElementById('collapseFive').addEventListener('shown.bs.collapse', function () 
+        {
+            
+            if (map) {
+                naver.maps.Event.trigger(map, 'resize'); // ★ 중요
+            }
+        });
+
+        // 초기 로딩 시 지도 생성
+        // initMap();
     </script>
 
     <script type="text/javascript">
