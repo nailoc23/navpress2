@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Navpress 템플릿-2</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon_imsi.png" />  <!-- images/favicon.svg -->
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/brands.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <!-- Start Topbar -->
+        <div class="topbar" id="topsearchbar"> <!-- show -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- <div class="col-lg-4 col-md-4 col-12"> -->
+                    <div class="col-lg-10 col-md-10 col-10">
+                        <div class="top-left">
+                            <form class="d-flex">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="lni lni-search-alt"></i></span>
+                                    <input class="form-control" type="search" placeholder="Search" name="search">
+                                </div>
+                            </form>
+                        <!--<ul class="menu-top-link">
+                                <li>
+                                    <div class="select-position">
+                                        <select id="select4">
+                                            <option value="0" selected>$ USD</option>
+                                            <option value="1">€ EURO</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="select-position">
+                                        <select id="select5">
+                                            <option value="0" selected>English</option>
+                                            <option value="1">Español</option>
+                                            <option value="2">Filipino</option>
+                                        </select>
+                                    </div>
+                                </li>                            
+                            </ul>-->
+                        </div> 
+                    </div>
+
+                    <!-- <div class="col-lg-4 col-md-4 col-12"> -->
+                        <!-- <div class="top-middle">
+                            <ul class="useful-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div> -->
+
+                    <!-- </div> -->
+                    
+                    <!-- <div class="col-lg-4 col-md-4 col-12"> -->
+                    <div class="col-lg-2 col-md-2 col-2">
+                        <div class="top-end">
+                            <a href="javascript:void(0);" onclick="closeSearchBar()" class="text-white fw-bold">
+                                <i class="lni lni-close"></i> 
+                            </a>
+                            <!-- <div class="user">
+                                <i class="lni lni-user"></i>
+                                Hello
+                            </div>
+                            <ul class="user-login">
+                                <li>
+                                    <a href="login.html">Sign In</a>
+                                </li>
+                                <li>
+                                    <a href="register.html">Register</a>
+                                </li>
+                            </ul> -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Topbar -->
+        <!-- Start Header Middle -->
+        <div class="header-middle">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- <div class="col-lg-3 col-md-3 col-7"> -->
+                        <div class="col-lg-3 col-md-3 col-7">
+                        <!-- Start Header Logo -->
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo/logo-new1.png" alt="Logo">
+                        </a>
+                        <!-- End Header Logo -->
+                    </div>
+                    <!--
+                    <div class="col-lg-5 col-md-7 d-xs-none">
+                    -->
+                    <div class="col-lg-6 col-md-7 d-xs-none">                       
+                        <!-- Start Main Menu Search -->
+                        <div class="main-menu-search">
+                            <!-- navbar search start -->
+                            <div class="navbar-search search-style-5">
+                                <div class="search-select">
+                                    <div class="select-position">
+                                        <select id="select1">
+                                            <option selected>통합검색</option>
+                                            <option value="1">도서명</option>
+                                            <option value="2">저자명</option>                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="search-input">
+                                    <input type="text" placeholder="Search">
+                                </div>
+                                <div class="search-btn">
+                                    <button><i class="lni lni-search-alt"></i></button>
+                                </div>
+                            </div>
+                            <!-- navbar search Ends -->
+                        </div>
+                        <!-- End Main Menu Search -->
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-2 col-5">
+                        <div class="middle-right-area">
+
+                            <div class="nav-hotline">
+                                <!-- <i class="lni lni-phone"></i>
+                                <h3>Hotline:
+                                    <span>(+100) 123 456 7890</span>
+                                </h3> -->
+                            </div>
+                            
+                            <div class="navbar-cart">
+                                <div class="wishlist search-menu">
+                                    <a href="javascript:void(0);" onclick="openSearchBar()">
+                                        <i class="lni lni-search-alt"></i>
+                                        <!-- <span class="total-items">0</span> -->
+                                    </a>
+                                </div>
+                                <div class="wishlist mobile-menu">
+                                    <a class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="lni lni-menu"></i>
+                                    </a>
+                                </div>
+
+                                <!-- <div class="wishlist">
+                                    <a href="javascript:void(0)">
+                                        <i class="lni lni-heart"></i>
+                                        <span class="total-items">0</span>
+                                    </a>
+                                </div> -->
+
+                                <div class="cart-items">        
+                                    <!--                           
+                                    <a href="javascript:void(0)" class="main-btn">
+                                        <i class="lni lni-cart"></i>
+                                        <span class="total-items">0</span>
+                                    </a>
+                                    -->
+
+                                    <!-- Shopping Item -->
+                                    <!--
+                                    <div class="shopping-item">
+                                        <div class="dropdown-cart-header">
+                                            <span>2 Items</span>
+                                            <a href="cart.html">View Cart</a>
+                                        </div>
+                                        <ul class="shopping-list">
+                                            <li>
+                                                <a href="javascript:void(0)" class="remove" title="Remove this item"><i
+                                                        class="lni lni-close"></i></a>
+                                                <div class="cart-img-head">
+                                                    <a class="cart-img" href="product-details.html"><img
+                                                            src="images/header/cart-items/item1.jpg" alt="#"></a>
+                                                </div>
+
+                                                <div class="content">
+                                                    <h4><a href="product-details.html">
+                                                            Apple Watch Series 6</a></h4>
+                                                    <p class="quantity">1x - <span class="amount">$99.00</span></p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="remove" title="Remove this item"><i
+                                                        class="lni lni-close"></i></a>
+                                                <div class="cart-img-head">
+                                                    <a class="cart-img" href="product-details.html"><img
+                                                            src="images/header/cart-items/item2.jpg" alt="#"></a>
+                                                </div>
+                                                <div class="content">
+                                                    <h4><a href="product-details.html">Wi-Fi Smart Camera</a></h4>
+                                                    <p class="quantity">1x - <span class="amount">$35.00</span></p>
+                                                </div>
+                                            </li>
+
+                                            
+                                        </ul>
+                                        <div class="bottom">
+                                            <div class="total">
+                                                <span>Total</span>
+                                                <span class="total-amount">$134.00</span>
+                                            </div>
+                                            <div class="button">
+                                                <a href="checkout.html" class="btn animate">Checkout</a>
+                                            </div>
+                                        </div>
+                                    
+                                    </div> -->
+                                    <!--/ End Shopping Item -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div> <!-- container -->
+        </div> <!-- header-middle -->
+        <!-- End Header Middle -->
+
+        <!-- Start Header Bottom -->
+        <div class="container container-bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-6 col-12">
+                    <div class="nav-inner">
+                        <!-- Start Mega Category Menu -->
+                        <div class="mega-category-menu">
+                            <span class="cat-button">
+                                <i class="lni lni-menu"></i>도서 분류                        
+                            </span>
+                            <!-- <ul class="sub-category">
+                                <li><a href="booklist.html">성경공부</li>                                                                                                         
+                            </ul> -->
+                        </div>
+                        <!-- End Mega Category Menu -->
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <!-- <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button> -->
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <!-- <a href="index.html" class="active" aria-label="Toggle navigation">홈</a> -->
+                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                                            data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">HOME</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-1">
+                                            <li class="nav-item"><a href="about_us.html">출판사소개</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                                            data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">출판 도서</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-2">
+                                            <li class="nav-item"><a href="booklist.html">성경공부</a></li>
+                                            <li class="nav-item"><a href="booklist.html">성경암송</a></li>
+                                            <li class="nav-item"><a href="booklist.html">경건의시간</a></li>
+                                            <li class="nav-item"><a href="booklist.html">전도지</a></li>
+                                            <li class="nav-item"><a href="booklist.html">소책자</a></li>
+                                            <li class="nav-item"><a href="booklist.html">단행본</a></li>
+                                            <li class="nav-item"><a href="booklist.html">바인더 및 용품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                                            data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">도서활용법</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-3">
+                                            <li class="nav-item"><a href="usebook.html">네비게이토 성경공부</a></li>
+                                            <li class="nav-item"><a href="usebook.html">네비게이토 성경암송</a></li>
+                                            <li class="nav-item"><a href="usebook.html">네비게이토 전도지</a></li>
+                                            <li class="nav-item"><a href="usebook.html">네비게이토 바인더</a></li>
+                                            <li class="nav-item"><a href="usebook.html">제자 훈련 추천 도서</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                                            data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">자료실</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-4">
+                                            <li class="nav-item"><a href="resources.html">다리예화 전도</a></li>
+                                            <li class="nav-item"><a href="resources.html">수례바퀴 예화</a></li>
+                                            <li class="nav-item"><a href="resources.html">말씀의 손</a></li>
+                                            <li class="nav-item"><a href="resources.html">기도의 손</a></li>                                        
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                                            data-bs-target="#submenu-1-5" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">주문</a>
+                                        <ul class="sub-menu collapse" id="submenu-1-5">
+                                            <li class="nav-item"><a href="order.html">구입 안내</a></li>
+                                            <li class="nav-item"><a href="order.html">주문 게시판</a></li>                                          
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="blog.html" aria-label="Toggle navigation">블로그</a> 
+                                        <!-- <ul class="sub-menu collapse" id="submenu-1-6">
+                                            <li class="nav-item"><a href="blog-grid-sidebar.html">Blog Grid Sidebar</a>
+                                            </li>
+                                            <li class="nav-item"><a href="blog-single.html">Blog Single</a></li>
+                                            <li class="nav-item"><a href="blog-single-sidebar.html">Blog Single
+                                                    Sibebar</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!--
+                                    <li class="nav-item">
+                                        <a href="contact.html" aria-label="Toggle navigation">한국 네비게이토 선교회</a>
+                                    </li>
+                                    -->
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    
+                    <!-- Start Nav Social -->
+                    <div class="nav-social">
+                        <!-- <h5 class="title">Follow Us:</h5> -->
+                        <h5 class="title">
+                        <a href="#" aria-label="Toggle navigation">한국 네비게이토 선교회</a>
+                        </h5>
+                        <!-- 
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="lni lni-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="lni lni-skype"></i></a>
+                            </li> 
+                            
+                        </ul>
+                        -->
+                    </div>
+                    <!-- End Nav Social -->
+                </div>
+
+            </div>
+        </div>
+        <!-- End Header Bottom -->
+        
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Hero Area -->
+    <!-- End Hero Area -->
+
+    <!-- Start Banner Area -->
+    <!-- End Banner Area -->
+
+    <!-- Start Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="breadcrumbs-content">
+                        <h1 class="page-title">도서 소개</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <ul class="breadcrumb-nav">
+                        <li><a href="index.html"><i class="lni lni-home"></i> Home</a></li>
+                        <li><a href="#"> 출판도서</a></li>
+                        <li>성경공부</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Start Item Details -->
+    <section class="item-details section">
+        <div class="container">
+            <div class="top-area">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-12 col-12">
+                        <div class="product-images">
+                            <main id="gallery">
+                                <div class="main-img">
+                                    <img src="images/product-details/AA01.png" id="current" alt="#">
+                                </div>
+                                <!-- <div class="images">
+                                    <img src="images/product-details/01.jpg" class="img" alt="#">
+                                    <img src="images/product-details/02.jpg" class="img" alt="#">
+                                    <img src="images/product-details/03.jpg" class="img" alt="#">
+                                    <img src="images/product-details/04.jpg" class="img" alt="#">
+                                    <img src="images/product-details/05.jpg" class="img" alt="#">
+                                </div> -->
+                            </main>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <div class="product-info">
+                            <h2 class="title">인간과 하나님</h2>
+                            <!-- <p class="category"><i class="lni lni-tag"></i> 도서분류:<a href="javascript:void(0)">
+                                    성경공부</a></p> -->
+                            <!-- <h3 class="price">$850<span>$945</span></h3> -->
+                            <p class="info-text"><i class="lni lni-tag"></i>  
+                                많은 사람들이 의미 있는 삶과 영원한 것을 갈급해 하지만 눈에 닥치는 필요와 피부로 느끼는 즐거움을 위해 바쁘게 지내곤 합니다. 때론 공허함과 마음의 아픔을 통해 눈에 보이는 것 그 이상을 찾고자 하지만 진리를 발견치 못하고 잘못된 이론과 헛된 교훈에 미혹되어 인생의 풍랑을 맞기도 합니다.
+                                <br><br>
+                                <i class="lni lni-tag"></i> 본서는 하나님을 떠나 죄를 범하여 멸망에 처한 인간의 상태와 이런 방황하는 사람들을 끝까지 사랑하시는 하나님의 사랑과 그 해결책인 예수 그리스도의 복음을 깊이 있게 다루고 있습니다.
+                            </p>
+
+                            <!-- <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="form-group color-option">
+                                        <label class="title-label" for="size">▶ 저 자</label>
+                                        <div class="single-checkbox checkbox-style-1">
+                                            <input type="checkbox" id="checkbox-1" checked>
+                                            <label for="checkbox-1"><span></span></label>
+                                        </div>
+                                        <div class="single-checkbox checkbox-style-2">
+                                            <input type="checkbox" id="checkbox-2">
+                                            <label for="checkbox-2"><span></span></label>
+                                        </div>
+                                        <div class="single-checkbox checkbox-style-3">
+                                            <input type="checkbox" id="checkbox-3">
+                                            <label for="checkbox-3"><span></span></label>
+                                        </div>
+                                        <div class="single-checkbox checkbox-style-4">
+                                            <input type="checkbox" id="checkbox-4">
+                                            <label for="checkbox-4"><span></span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="form-group">
+                                        <label for="color">Battery capacity</label>
+                                        <select class="form-control" id="color">
+                                            <option>5100 mAh</option>
+                                            <option>6200 mAh</option>
+                                            <option>8000 mAh</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="form-group quantity">
+                                        <label for="color">Quantity</label>
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-content">
+                                <div class="row align-items-end">
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <div class="button cart-button">
+                                            <button class="btn" style="width: 100%;">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <div class="wish-button">
+                                            <button class="btn"><i class="lni lni-reload"></i> Compare</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-12">
+                                        <div class="wish-button">
+                                            <button class="btn"><i class="lni lni-heart"></i> To Wishlist</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-details-info">
+                <div class="single-block">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <div class="info-body custom-responsive-margin">
+                                <!-- <h4>상세</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p> -->
+                                <h4>도서정보</h4>
+                                <ul class="features">
+                                    <li>저 자: 네비게이토출판사</li>
+                                    <li>쪽 수: 32쪽</li>
+                                    <li>판 형: A5(148*210)</li>
+                                    <li>정 가: 2,000원</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="info-body">
+                                <!-- <h4>관련 정보</h4>
+                                <ul class="normal-list">
+                                    <li><span>Weight:</span> 35.5oz (1006g)</li>
+                                    <li><span>Maximum Speed:</span> 35 mph (15 m/s)</li>
+                                    <li><span>Maximum Distance:</span> Up to 9,840ft (3,000m)</li>
+                                    <li><span>Operating Frequency:</span> 2.4GHz</li>
+                                    <li><span>Manufacturer:</span> GoPro, USA</li>
+                                </ul> -->
+                                <h4>관련 정보</h4>
+                                <ul class="normal-list">
+                                    <li><span>주제:</span>초기 양육</li>
+                                    <li><span>분류:</span>성경 공부</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Item Details -->
+
+    <!-- Start Brands Area -->
+    <div class="brands">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
+                    <h2 class="title">관련 도서</h2>
+                </div>
+            </div>
+            <div class="brands-logo-wrapper">
+                <div class="brands-logo-carousel d-flex align-items-center justify-content-between">
+                    <div class="brand-logo">
+                        <img src="images/product-details/temp01-1.png" alt="#">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="images/product-details/temp02-1.png" alt="#">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="images/product-details/temp03-1.png" alt="#">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="images/product-details/temp04-1.png" alt="#">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="images/product-details/temp05-1.png" alt="#">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="images/product-details/temp06-1.png" alt="#">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="images/product-details/temp03-1.png" alt="#">
+                    </div>
+                    <div class="brand-logo">
+                        <img src="images/product-details/temp04-1.png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Brands Area -->
+
+    <!-- Review Modal -->
+    <!-- End Review Modal -->
+
+    <!-- Start Trending Product Area -->
+    <!-- End Shipping Info -->
+
+    <!-- Start Footer Area -->
+    <footer class="footer">
+        <!-- Start Footer Top -->
+
+        <!-- <div class="footer-top">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-12">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    <img src="images/logo/logo-navpress-removebg-preview.png" alt="#">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-12">
+                            <div class="footer-newsletter">
+                                
+                                <h4 class="title">
+                                    Subscribe to our Newsletter
+                                    <span>Get all the latest information, Sales and Offers.</span>
+                                </h4>
+                                <div class="newsletter-form-head">
+
+                                    <form action="#" method="get" target="_blank" class="newsletter-form">
+                                        <input name="EMAIL" placeholder="Email address here..." type="email">
+                                        <div class="button">
+                                            <button class="btn">Subscribe<span class="dir-part"></span></button>
+                                        </div>
+                                    </form>                                                                                              
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        -->
+        <!-- End Footer Top -->
+         
+        <!-- Start Footer Middle -->
+        <div class="footer-middle">
+            <div class="container">
+                <div class="bottom-inner">
+                    <div class="row">
+                        <!-- <div class="col-lg-3 col-md-6 col-12"> -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-contact">
+                                <h3>
+                                    <!-- 네비게이토 출판사 -->
+                                    <img src="images/logo/logo-navpress-removebg-preview.png" alt="#" height="40">
+                                </h3>
+                                
+                                <!-- <p class="phone">Phone: +1 (900) 33 169 7720</p> -->
+                                <ul>                                    
+                                    <li>03784 서울특별시 서대문구 연희로 16 (연희동)</li>
+                                    <li>webmaster@navpress.co.kr</li>                                    
+                                </ul>
+                                
+                                <!-- <p class="mail">
+                                    <a href="mailto:support@shopgrids.com">webmaster@navpress.co.kr</a>
+                                </p> -->
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                        <!-- <div class="col-lg-3 col-md-6 col-12"> -->
+                            <!-- Single Widget -->
+
+                            <!-- <div class="single-footer our-app">
+                                <h3>Our Mobile App</h3>
+                                <ul class="app-btn">
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="lni lni-apple"></i>
+                                            <span class="small-title">Download on the</span>
+                                            <span class="big-title">App Store</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <i class="lni lni-play-store"></i>
+                                            <span class="small-title">Download on the</span>
+                                            <span class="big-title">Google Play</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <!-- End Single Widget -->
+                        <!-- </div> -->
+                        <!-- <div class="col-lg-3 col-md-6 col-12"> -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <!-- Single Widget -->
+
+                            <!-- <div class="single-footer f-link">
+                                <h3>Information</h3>
+                                <ul>
+                                    <li><a href="javascript:void(0)">About Us</a></li>
+                                    <li><a href="javascript:void(0)">Contact Us</a></li>
+                                    <li><a href="javascript:void(0)">Downloads</a></li>
+                                    <li><a href="javascript:void(0)">Sitemap</a></li>
+                                    <li><a href="javascript:void(0)">FAQs Page</a></li>
+                                </ul>
+                            </div> -->
+                            <!-- End Single Widget -->
+                        </div>
+                        <!-- <div class="col-lg-3 col-md-6 col-12"> -->
+                            <div class="col-lg-4 col-md-6 col-12">
+                            <!-- Single Widget -->
+                            <div class="single-footer f-link">
+                                <h3>The Korea NavPress</h3>
+                                <ul>
+                                    <li>대표전화: 02-333-3333</li>
+                                    <li>구입안내: 02-337-3307</li>
+                                </ul>
+                            </div>
+                            <!-- End Single Widget -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Middle -->
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="inner-content">
+                    <div class="row align-items-center">
+                        <!-- <div class="col-lg-4 col-12">
+                            <div class="payment-gateway">
+                                <span>We Accept:</span>
+                                <img src="images/footer/credit-cards-footer.png" alt="#">
+                            </div>
+                        </div> -->
+                        <div class="col-lg-12 col-12">
+                            <div class="copyright">
+                                <p>Copyright 2025 The Korea Navpress. All Rights Reserved.</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-lg-4 col-12">
+                            <ul class="socila">
+                                <li>
+                                    <span>Follow Us On:</span>
+                                </li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="lni lni-google"></i></a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        //========= Hero Slider 
+        
+        //======== Brand Slider
+        tns({
+            container: '.brands-logo-carousel',
+            autoplay: true,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            gutter: 15,
+            nav: false,
+            controls: false,
+            responsive: {
+                0: {
+                    items: 2,
+                },
+                540: {
+                    items: 2,
+                },
+                768: {
+                    items: 3,
+                },
+                992: {
+                    items: 4,
+                }
+            }
+        });
+
+        //======== 모바일 상단 검색
+        function openSearchBar() {
+            document.getElementById("topsearchbar").classList.add("show");
+        }
+
+        function closeSearchBar() {
+            document.getElementById("topsearchbar").classList.remove("show");
+        }
+    </script>
+
+</body>
+
+</html>
