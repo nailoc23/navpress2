@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="utf-8" />
@@ -16,6 +16,19 @@
     <link rel="stylesheet" href="css/glightbox.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/brands.css">
+
+    <style type="text/css">
+        #container1 {
+          height: 90vh;
+          width: 100%;
+          margin: 0px auto;
+          /* border: 2px solid red; */
+          /* box-shadow: 0 0 5px gray; */
+        }
+        .fullscreen {
+          background-color: #666;
+        }
+      </style>
 </head>
 
 <body>
@@ -430,8 +443,13 @@
                     <div class="col-lg-8 col-md-12 col-12">
                         <div class="product-images">
                             <main id="gallery">
-                                <div class="main-img">
+
+                                <!-- <div class="main-img">
                                     <img src="images/product-details/AA01.png" id="current" alt="#">
+                                </div> -->
+
+                                <div class="container main-img" id="container1">
+
                                 </div>
                                 <!-- <div class="images">
                                     <img src="images/product-details/01.jpg" class="img" alt="#">
@@ -778,7 +796,7 @@
     </a>
 
     <!-- ========================= JS here ========================= -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/glightbox.min.js"></script>
     <script src="js/main.js"></script>
@@ -818,6 +836,35 @@
         function closeSearchBar() {
             document.getElementById("topsearchbar").classList.remove("show");
         }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/pdf.min.js"></script>
+    <script src="js/3dflipbook.min.js"></script>
+
+    <script type="text/javascript">
+
+    var template = {
+        html: 'libs/templates/default-book-view.html',
+        links: [{
+        rel: 'stylesheet',
+        href: 'libs/css/font-awesome.min.css'
+        }],
+        styles: [
+        'libs/css/short-black-book-view.css'
+        ],
+        script: 'js/default-book-view.js'
+    };
+
+    // Book 1 {
+    $('#container1').FlipBook({
+        pdf: 'libs/books/pdf/AA01.pdf',
+        template: template
+    });
+    // }
+
     </script>
 
 </body>
