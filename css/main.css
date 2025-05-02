@@ -3628,7 +3628,7 @@ top: 2px;
 }
 
 .item-details .product-images img {
-  width: 100%;
+  width: 60%;
   cursor: pointer;
   border: 1px solid #eee;
   border-radius: 4px;
