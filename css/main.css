@@ -3563,7 +3563,8 @@ top: 2px;
     Call Action CSS
 ========================================*/
 .call-action {
-  background-color: #0167F3;
+  /* background-color: #0167F3; */
+  background-color: #673ab7;
 }
 
 .call-action .content {
@@ -3611,6 +3612,39 @@ top: 2px;
 .call-action .content .button .btn:hover {
   color: #fff;
   background: #081828;
+}
+
+/*======================================
+    Call Action CSS Typing Animation
+========================================*/
+        /* Google Fonts */
+        
+
+/* Cursor */
+.cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
 }
 
 /*======================================

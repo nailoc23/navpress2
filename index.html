@@ -23,97 +23,97 @@
         }
 
         .book-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    perspective: 600px;
-    }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        perspective: 600px;
+        }
 
-    @keyframes initAnimation {
-    0% {
-        transform: rotateY(0deg);
-    }
-    100% {
+        @keyframes initAnimation {
+        0% {
+            transform: rotateY(0deg);
+        }
+        100% {
+            transform: rotateY(-30deg);
+        }
+        }
+
+        .book {
+        width: 190px;
+        height: 280px;
+        position: relative;
+        transform-style: preserve-3d;
         transform: rotateY(-30deg);
-    }
-    }
+        transition: 1s ease;
+        animation: 1s ease 0s 1 initAnimation;
+        }
 
-    .book {
-    width: 190px;
-    height: 280px;
-    position: relative;
-    transform-style: preserve-3d;
-    transform: rotateY(-30deg);
-    transition: 1s ease;
-    animation: 1s ease 0s 1 initAnimation;
-    }
+        .book-container:hover .book, 
+        .book-container:focus .book {
+        transform: rotateY(0deg);
+        }
 
-    .book-container:hover .book, 
-    .book-container:focus .book {
-    transform: rotateY(0deg);
-    }
+        .book > :first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+        width: 190px;
+        height: 280px;
+        transform: translateZ(15px);
+        background-color: #01060f;
+        border-radius: 0 2px 2px 0;
+        box-shadow: 5px 5px 20px #666;
+        }
 
-    .book > :first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: red;
-    width: 190px;
-    height: 280px;
-    transform: translateZ(15px);
-    background-color: #01060f;
-    border-radius: 0 2px 2px 0;
-    box-shadow: 5px 5px 20px #666;
-    }
+        .book::before {
+        position: absolute;
+        content: ' ';
+        background-color: blue;
+        left: 0;
+        top: 1px;
+        width: 28px;
+        height: 278px;
+        transform: translateX(174px) rotateY(90deg);
+        background: linear-gradient(90deg, 
+            #fff 0%,
+            #f9f9f9 5%,
+            #fff 10%,
+            #f9f9f9 15%,
+            #fff 20%,
+            #f9f9f9 25%,
+            #fff 30%,
+            #f9f9f9 35%,
+            #fff 40%,
+            #f9f9f9 45%,
+            #fff 50%,
+            #f9f9f9 55%,
+            #fff 60%,
+            #f9f9f9 65%,
+            #fff 70%,
+            #f9f9f9 75%,
+            #fff 80%,
+            #f9f9f9 85%,
+            #fff 90%,
+            #f9f9f9 95%,
+            #fff 100%
+            );
+        }
 
-    .book::before {
-    position: absolute;
-    content: ' ';
-    background-color: blue;
-    left: 0;
-    top: 1px;
-    width: 28px;
-    height: 278px;
-    transform: translateX(174px) rotateY(90deg);
-    background: linear-gradient(90deg, 
-        #fff 0%,
-        #f9f9f9 5%,
-        #fff 10%,
-        #f9f9f9 15%,
-        #fff 20%,
-        #f9f9f9 25%,
-        #fff 30%,
-        #f9f9f9 35%,
-        #fff 40%,
-        #f9f9f9 45%,
-        #fff 50%,
-        #f9f9f9 55%,
-        #fff 60%,
-        #f9f9f9 65%,
-        #fff 70%,
-        #f9f9f9 75%,
-        #fff 80%,
-        #f9f9f9 85%,
-        #fff 90%,
-        #f9f9f9 95%,
-        #fff 100%
-        );
-    }
-
-    .book::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: ' ';
-    width: 190px;
-    height: 280px;
-    transform: translateZ(-15px);
-    background-color: #01060f;
-    border-radius: 0 2px 2px 0;
-    box-shadow: -10px 0 50px 10px #666;
-    }
+        .book::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: ' ';
+        width: 190px;
+        height: 280px;
+        transform: translateZ(-15px);
+        background-color: #01060f;
+        border-radius: 0 2px 2px 0;
+        box-shadow: -10px 0 50px 10px #666;
+        }
     </style>
-    
+   
 </head>
 
 <body>
@@ -645,10 +645,12 @@
                 <div class="col-lg-8 offset-lg-2 col-12">
                     <div class="inner">
                         <div class="content">
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s">
-                                [그리스도를 알고 그를 알게 하라]<br>
+                            <div class="typing-container">
+                            <h2 class="wow fadeInUp cursor typewriter-animation" data-wow-delay=".4s">
+                                [그리스도를 알고 그를 알게 하라]
                                 <!-- Lite version of ShopGrids -->
                             </h2>
+                            </div>
                             <p class="wow fadeInUp" data-wow-delay=".6s">
                                 네비게이토 출판사는 네비게이토 선교회의 문서선교를 담당하고 있습니다. <br>
                                 영적 성장을 돕는 서적과 자료들을 출판하여 모든 그리스도인으로 하여금 삶의 기초가 견고한 제자로 성장하고, <br>
