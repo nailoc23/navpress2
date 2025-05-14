@@ -902,6 +902,7 @@
             book2: {
               pdf: 'libs/books/pdf/AA02.pdf',
               propertiesCallback: function(props) {
+                props.renderingResolution = 2; // 기본값은 1  
                 props.page.depth /= 4;
                 props.cover.padding = 0.002;
                 return props;
