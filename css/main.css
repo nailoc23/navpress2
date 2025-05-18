@@ -2405,6 +2405,11 @@ position: relative;
 top: 2px;
 }
 
+/* 추가 수정함 */
+.header .mega-category-menu .cat-link {
+  color:#01060f;
+}
+
 .header .mega-category-menu:hover .sub-category {
   opacity: 1;
   visibility: visible;
