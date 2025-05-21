@@ -113,6 +113,33 @@
         box-shadow: -10px 0 50px 10px #666;
         }
     </style>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <style>
+        .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+       
+        .swiper-slide {
+            background: #fff;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+
+
+        
+    </style>
    
 </head>
 
@@ -1006,7 +1033,8 @@
 
     <!-- Start Shipping Info -->
     <section class="blog-section section">
-        <div class="container">
+        <div class="container swiper-content">
+
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
@@ -1017,74 +1045,161 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Blog -->
-                    <div class="single-blog">
-                        <div class="blog-img">
-                            <a href="blog-single-sidebar.html">
-                                <img src="images/blog/blog-11.jpg" alt="#">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <a class="category" href="javascript:void(0)">출판사</a>
-                            <h4>
-                                <a href="blog-single-sidebar.html">주님께서 주신 축복들</a>
-                            </h4>
-                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p> -->
-                            <div class="button">
-                                <a href="javascript:void(0)" class="btn">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Blog -->
-                    <div class="single-blog">
-                        <div class="blog-img">
-                            <a href="blog-single-sidebar.html">
-                                <img src="images/blog/blog-22.jpg" alt="#">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <a class="category" href="javascript:void(0)">출판사</a>
-                            <h4>
-                                <a href="blog-single-sidebar.html">성경적 리더십의 원리</a>
-                            </h4>
-                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p> -->
-                            <div class="button">
-                                <a href="javascript:void(0)" class="btn">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Start Single Blog -->
-                    <div class="single-blog">
-                        <div class="blog-img">
-                            <a href="blog-single-sidebar.html">
-                                <img src="images/blog/blog-33.jpg" alt="#">
-                            </a>
-                        </div>
-                        <div class="blog-content">
-                            <a class="category" href="javascript:void(0)">출판사</a>
-                            <h4>
-                                <a href="blog-single-sidebar.html">네비게이토 사역과 문서 선교
+            <div class="row swiper blogSwiper swiper-container">
+                
+                <div class="swiper-wrapper"> <!-- 추가 -->
+
+                    <div class="col-lg-4 col-md-6 col-12 swiper-slide">
+                    
+                        <!-- Start Single Blog -->
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="blog-single-sidebar.html">
+                                    <img src="images/blog/blog-11.jpg" alt="#">
                                 </a>
-                            </h4>
-                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p> -->
-                            <div class="button">
-                                <a href="javascript:void(0)" class="btn">Read More</a>
+                            </div>
+                            <div class="blog-content">
+                                <a class="category" href="javascript:void(0)">출판사</a>
+                                <h4>
+                                    <a href="blog-single-sidebar.html">주님께서 주신 축복들</a>
+                                </h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt.</p> -->
+                                <div class="button">
+                                    <a href="javascript:void(0)" class="btn">Read More</a>
+                                </div>
                             </div>
                         </div>
+                        <!-- End Single Blog -->
                     </div>
-                    <!-- End Single Blog -->
+
+                    <div class="col-lg-4 col-md-6 col-12 swiper-slide">
+                        <!-- Start Single Blog -->
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="blog-single-sidebar.html">
+                                    <img src="images/blog/blog-33.jpg" alt="#">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a class="category" href="javascript:void(0)">출판사</a>
+                                <h4>
+                                    <a href="blog-single-sidebar.html">네비게이토 사역과 문서 선교
+                                    </a>
+                                </h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt.</p> -->
+                                <div class="button">
+                                    <a href="javascript:void(0)" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                    </div>
+                
+                    <div class="col-lg-4 col-md-6 col-12 swiper-slide">
+                        <!-- Start Single Blog -->
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="blog-single-sidebar.html">
+                                    <img src="images/blog/blog-22.jpg" alt="#">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a class="category" href="javascript:void(0)">출판사</a>
+                                <h4>
+                                    <a href="blog-single-sidebar.html">성경적 리더십의 원리</a>
+                                </h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt.</p> -->
+                                <div class="button">
+                                    <a href="javascript:void(0)" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                    </div>                    
+
+                    <div class="col-lg-4 col-md-6 col-12 swiper-slide">
+                        <!-- Start Single Blog -->
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="blog-single-sidebar.html">
+                                    <img src="images/blog/blog-33.jpg" alt="#">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a class="category" href="javascript:void(0)">출판사</a>
+                                <h4>
+                                    <a href="blog-single-sidebar.html">네비게이토 사역과 문서 선교
+                                    </a>
+                                </h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt.</p> -->
+                                <div class="button">
+                                    <a href="javascript:void(0)" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 swiper-slide">
+                    
+                        <!-- Start Single Blog -->
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="blog-single-sidebar.html">
+                                    <img src="images/blog/blog-11.jpg" alt="#">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a class="category" href="javascript:void(0)">출판사</a>
+                                <h4>
+                                    <a href="blog-single-sidebar.html">주님께서 주신 축복들</a>
+                                </h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt.</p> -->
+                                <div class="button">
+                                    <a href="javascript:void(0)" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 swiper-slide">
+                        <!-- Start Single Blog -->
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <a href="blog-single-sidebar.html">
+                                    <img src="images/blog/blog-33.jpg" alt="#">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <a class="category" href="javascript:void(0)">출판사</a>
+                                <h4>
+                                    <a href="blog-single-sidebar.html">네비게이토 사역과 문서 선교
+                                    </a>
+                                </h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt.</p> -->
+                                <div class="button">
+                                    <a href="javascript:void(0)" class="btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Single Blog -->
+                    </div>
+
+
                 </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
             </div>
 
             
@@ -1277,32 +1392,37 @@
             controlsText: ['<i class="lni lni-chevron-left"></i>', '<i class="lni lni-chevron-right"></i>'],
         });
 
-        //======== Brand Slider
-        /*
-        tns({
-            container: '.brands-logo-carousel',
-            autoplay: true,
-            autoplayButtonOutput: false,
-            mouseDrag: true,
-            gutter: 15,
-            nav: false,
-            controls: false,
-            responsive: {
-                0: {
-                    items: 1,
+        //======== Brand Slider 
+        const swiper = new Swiper(".blogSwiper", {
+            effect: 'coverflow',
+                coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
                 },
-                540: {
-                    items: 3,
-                },
-                768: {
-                    items: 5,
-                },
-                992: {
-                    items: 6,
-                }
-            }
+
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
         });
-        */
 
         //======== 모바일 상단 검색
         function openSearchBar() {
