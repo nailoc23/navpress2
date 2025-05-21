@@ -3316,6 +3316,12 @@ top: 2px;
 .single-product .product-image {
   overflow: hidden;
   position: relative;
+
+  background-color: #FBF5F7;    /* 여백 색상 */
+  padding: 30px 5px;              /* 원하는 여백 크기로 조절 (예: 10px) */
+  display: flex;                  /* 플렉스 가운데 정렬 */
+  justify-content: center;
+  align-items: center;
 }
 
 .single-product .product-image .sale-tag {
@@ -3370,9 +3376,11 @@ top: 2px;
 }
 
 .single-product .product-image img {
-  width: 100%;
+  width: 75%; /* 이미지 크기 추가 */
+  height: auto; /* 이미지 크기 추가 */
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  box-shadow: 2px 3px 5px 0px;  /* 이미지 그림자 추가 */
 }
 
 .single-product:hover .product-image .button {
