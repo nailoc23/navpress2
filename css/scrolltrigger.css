@@ -82,9 +82,8 @@
   margin-bottom: 75px;
 }
 .pinned-image__quote blockquote p {
-  font-size: 26px;
-  font-style: italic;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.5;
   max-width: 800px;
 }
 .pinned-image__quote blockquote p:before {
@@ -94,7 +93,7 @@
   content: .pinned-image__quote blockquote p:after rdquo;
 }
 .pinned-image__quote-author {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
 }
 .pinned-image__quote-role {
