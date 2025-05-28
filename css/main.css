@@ -3577,7 +3577,8 @@ top: 2px;
 ========================================*/
 .call-action {
   /* background-color: #0167F3; */
-  background-color: #673ab7;
+  /* background-color: #673ab7; */
+  background-color: #fff;
 }
 
 .call-action .content {
