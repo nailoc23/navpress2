@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Navpress 템플릿-2</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon_imsi.png" />  <!-- images/favicon.svg -->  <!-- images/favicon.svg -->
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+        <p class="browserupgrade">
+          You are using an <strong>outdated</strong> browser. Please
+          <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+          your experience and security.
+        </p>
+      <![endif]-->
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-icon">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- /End Preloader -->
+
+  <!-- Start Error Area -->
+  <div class="maill-success">
+    <div class="d-table">
+      <div class="d-table-cell">
+        <div class="container">
+          <div class="success-content">
+            <i class="lni lni-envelope"></i>
+            <h2>메일이 성공적으로 전송되었습니다.</h2>
+            <p>문의해 주셔서 감사합니다. 최대한 빨리 답변 드리겠습니다.</p>
+            <div class="button">
+              <a href="index.html" class="btn">홈으로 돌아가기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Error Area -->
+
+  <!-- ========================= JS here ========================= -->
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    window.onload = function () {
+      window.setTimeout(fadeout, 500);
+    }
+
+    function fadeout() {
+      document.querySelector('.preloader').style.opacity = '0';
+      document.querySelector('.preloader').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
