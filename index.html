@@ -1300,7 +1300,7 @@
     <!--/ End Footer Area -->
 
     <!-- ========================= scroll-top ========================= -->
-    <a href="#" class="scroll-top">
+    <a class="scroll-top">
         <i class="lni lni-chevron-up"></i>
     </a>
 
@@ -1368,6 +1368,12 @@
 
         function closeSearchBar() {
             document.getElementById("topsearchbar").classList.remove("show");
+        }
+
+        const $topBtn = document.querySelector(".scroll-top");
+
+        $topBtn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });  
         }
     </script>
 

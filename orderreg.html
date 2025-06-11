@@ -12,9 +12,14 @@
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/LineIcons.3.0.css" />
-    
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/resources.css">
+
+    <link rel="stylesheet" href="css/main.css" />    
+    <link rel="stylesheet" href="css/orderlist.css">    
+
+    <style>
+        
+    </style>
+   
 </head>
 
 <body>
@@ -125,7 +130,7 @@
                     <!--
                     <div class="col-lg-5 col-md-7 d-xs-none">
                     -->
-                    <div class="col-lg-6 col-md-6 d-xs-none">                       
+                    <div class="col-lg-6 col-md-7 d-xs-none">                       
                         <!-- Start Main Menu Search -->
                         <div class="main-menu-search">
                             <!-- navbar search start -->
@@ -162,7 +167,7 @@
                             </div>
                             
                             <div class="navbar-cart">
-                                <div class="wishlist mobile-menu">
+                                <div class="wishlist search-menu">
                                     <a href="javascript:void(0);" onclick="openSearchBar()">
                                         <i class="lni lni-search-alt"></i>
                                         <!-- <span class="total-items">0</span> -->
@@ -183,11 +188,14 @@
                                     </a>
                                 </div> -->
 
-                                <div class="cart-items">                                    
-                                    <!-- <a href="javascript:void(0)" class="main-btn">
+                                <div class="cart-items">        
+                                    <!--                           
+                                    <a href="javascript:void(0)" class="main-btn">
                                         <i class="lni lni-cart"></i>
                                         <span class="total-items">0</span>
-                                    </a> -->
+                                    </a>
+                                    -->
+
                                     <!-- Shopping Item -->
                                     <!--
                                     <div class="shopping-item">
@@ -255,11 +263,12 @@
                     <div class="nav-inner">
                         <!-- Start Mega Category Menu -->
                         <div class="mega-category-menu">
-                            <span class="cat-button"><i class="lni lni-list"></i>
+                            <span class="cat-button">
+                                <i class="lni lni-list"></i>
                                 <a href="category.html" class="cat-link">도서 카테고리</a>
                             </span>
                             <!-- <ul class="sub-category">
-                                <li><a href="booklist.html">성경공부</li>
+                                <li><a href="booklist.html">성경공부</li>                                                                                                         
                             </ul> -->
                         </div>
                         <!-- End Mega Category Menu -->
@@ -391,11 +400,19 @@
     </header>
     <!-- End Header Area -->
 
-    <!-- Start Hero Area -->
+    <!-- Start Hero Area -->    
     <!-- End Hero Area -->
 
-    <!-- Start Banner Area -->
+    <!-- Start Banner Area -->    
     <!-- End Banner Area -->
+
+    <!-- Start Call Action Area -->    
+    <!-- End Call Action Area -->
+
+    <!-- 배너 이전 영역 -->
+
+    <!-- Start Trending Product Area -->    
+    <!-- End Trending Product Area -->
 
     <!-- Start Breadcrumbs -->
     <div class="breadcrumbs">
@@ -403,14 +420,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="breadcrumbs-content">
-                        <h1 class="page-title">자료실</h1>
+                        <h1 class="page-title">주문 게시판</h1>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
                     <ul class="breadcrumb-nav">
                         <li><a href="index.html"><i class="lni lni-home"></i> Home</a></li>
-                        <li>자료실</li>
-                        <li>말씀의 손</li>
+                        <li>주문</li>
+                        <li>주문게시판</li>
                     </ul>
                 </div>
             </div>
@@ -418,135 +435,288 @@
     </div>
     <!-- End Breadcrumbs -->
 
-    <!-- Start About Area -->
-    <section class="about-us section">
+    <!-- Shopping Cart -->
+    <!-- Shopping Cart -->
+    <div class="shopping-cart section">
         <div class="container">
+            <div class="cart-list-head">
+                <!-- Cart List Title -->
+                <div class="cart-list-title">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-1 col-12">
+
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <p>도서명</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>수량</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>소계</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>Discount</p>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-12">
+                            <p>Remove</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Cart List Title -->
+                <!-- Cart Single List list -->
+                <div class="cart-single-list">
+                    <div class="row align-items-center">
+                        <div class="col-lg-1 col-md-1 col-12">
+                            <a href="#"><img src="images/cart/01.jpg" alt="#"></a>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <h5 class="product-name"><a href="#">
+                                    믿음의 발자취</a></h5>
+                            <p class="product-des">
+                                <span><em>저자:</em> 윙킴톡</span>
+                                <!-- <span><em>Color:</em> Black</span> -->
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="count-input">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>10000원</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>—</p>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-12">
+                            <a class="remove-item" href="javascript:void(0)"><i class="lni lni-close"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single List list -->
+                <!-- Cart Single List list -->
+                <div class="cart-single-list">
+                    <div class="row align-items-center">
+                        <div class="col-lg-1 col-md-1 col-12">
+                            <a href="#"><img src="images/cart/02.jpg" alt="#"></a>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <h5 class="product-name"><a href="#">
+                                    성경 속의 리더쉽</a></h5>
+                            <p class="product-des">
+                                <span><em>저자:</em> 더스팍스</span>
+                                <!-- <span><em>Color:</em> Space Gray</span> -->
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="count-input">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>10000원</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>—</p>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-12">
+                            <a class="remove-item" href="javascript:void(0)"><i class="lni lni-close"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single List list -->
+                <!-- Cart Single List list -->
+                <div class="cart-single-list">
+                    <div class="row align-items-center">
+                        <div class="col-lg-1 col-md-1 col-12">
+                            <a href="#"><img src="images/cart/03.jpg" alt="#"></a>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-12">
+                            <h5 class="product-name"><a href="#">그리스도 제자의 다섯가지 기본 신념</a></h5>
+                            <p class="product-des">
+                                <span><em>저자:</em> 하진승</span>
+                                <!-- <span><em>Color:</em> White</span> -->
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <div class="count-input">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>10000원</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-12">
+                            <p>—</p>
+                        </div>
+                        <div class="col-lg-1 col-md-2 col-12">
+                            <a class="remove-item" href="javascript:void(0)"><i class="lni lni-close"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single List list -->
+            </div>
 
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title">
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">말씀의 손</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">
-                            사람이 떡으로만 살 것이 아니요 하나님의 입으로 나오는 모든 말씀으로 살 것이라. 
-                            <br>마태복음 4:4
-                        </p>
+                    <!-- Total Amount -->
+                    <div class="total-amount">
+                        <div class="row">
+                            
+                            <div class="col-lg-8 col-md-6 col-12">
+                                <div class="left">
+                                    <div class="coupon">
+                                        <!-- <form action="#" target="_blank">
+                                            <input name="Coupon" placeholder="Enter Your Coupon">
+                                            <div class="button">
+                                                <button class="btn">Apply Coupon</button>
+                                            </div>
+                                        </form> -->
+                                    
+                                    
+                                        <div class="checkout-steps-form-style-1">
+                                            <ul id="accordionExample">
+                                                <li>
+                                                    <!-- <h6 class="title" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                        aria-expanded="true" aria-controls="collapseThree">Your Personal Details </h6> -->
+                                                    <h6 class="title">주문자 정보</h6>
+                                                    <section class="checkout-steps-form-content collapse show" id="collapseThree"
+                                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                        <div class="row">
+                                                            <!-- <div class="col-md-12">
+                                                                <div class="single-form form-default">
+                                                                    <label>작성자명</label>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 form-input form">
+                                                                            <input type="text" placeholder="">
+                                                                        </div>
+                                                                        <div class="col-md-6 form-input form">
+                                                                            <input type="text" placeholder="Last Name">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div> -->
+                                                            <div class="col-md-6">
+                                                                <div class="single-form form-default">
+                                                                    <label>작성자명</label>
+                                                                    <div class="form-input form">
+                                                                        <input type="text" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="single-form form-default">
+                                                                    <label>비밀번호</label>
+                                                                    <div class="form-input form">
+                                                                        <input type="text" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="single-form form-default">
+                                                                    <label>주문자명</label>
+                                                                    <div class="form-input form">
+                                                                        <input type="text" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="single-form form-default">
+                                                                    <label>전화번호</label>
+                                                                    <div class="form-input form">
+                                                                        <input type="text" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                            
+                                                                                                                        
+                                                            <div class="col-md-6">
+                                                                <div class="single-form form-default">
+                                                                    <label>주소</label>
+                                                                    <div class="form-input form">
+                                                                        <input type="text" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="single-form form-default">
+                                                                    <label>우편번호</label>
+                                                                    <div class="form-input form">
+                                                                        <input type="text" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="single-form form-default">
+                                                                    <label>상세주소</label>
+                                                                    <div class="form-input form">
+                                                                        <input type="text" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                                                        
+                                                            <div class="col-md-12">
+                                                                <div class="single-form button">
+                                                                    <button class="btn" data-bs-toggle="collapse"
+                                                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                                                        aria-controls="collapseFour">주소검색</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="right">
+                                    <ul>
+                                        <li>주문 소계<span>30,000 원</span></li>
+                                        <!-- <li>배송비<span>3,000원</span></li> -->
+                                        <li>할인금액<span>0원</span></li>
+                                        <li class="last">총계<span>30,000 원</span></li>
+                                    </ul>
+                                    <div class="button">
+                                        <a href="checkout.html" class="btn">주문 등록</a>
+                                        <a href="product-grids.html" class="btn btn-alt">도서 카테고리</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!--/ End Total Amount -->
                 </div>
             </div>
-
-            <div class="row align-items-center">
-
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="content-left" style="text-align: center;">
-                        <img src="images/resourses/word-hand-1.png" alt="#" style="width:85%">
-                        <!-- <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
-                            class="glightbox video"><i class="lni lni-play"></i></a> -->
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-12 col-12">
-                    <!-- content-1 start -->
-                    <div class="content-right">
-                        <!-- <h2>풍성한 삶</h2>
-                        <br> -->
-                        <p>
-                            말씀의 손 예화 : 성경 말씀을 섭취하는 다섯가지 방법
-                        </p>
-                        <p>
-                            1. 듣기 (롬 10:17)
-                        </p>
-                        <p>
-                            하나님의 말씀을 들을 수 있는 기회는 많이 있습니다. 그러므로 말씀 듣기를 적극적으로 잘 활용하면 신앙 생활에 큰 도움을 얻을 수 있습니다.
-                        </p>
-                        <p>
-                            2. 읽기 (계 1:3)
-                        </p>
-                        <p>
-                            성경을 읽음으로써 하나님의 말씀에 대한 전체적인 이해를 얻게 됩니다. 이를 위해 성경 읽기표 등을 활용하면 좋습니다.
-                        </p>
-                        
-                    </div>
-                </div>
-            </div>    
-            
-            <div class="row align-items-center">
-
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="content-left" style="text-align: center;">
-                        <img src="images/resourses/word-hand-2.webp" alt="#" style="width:85%;">
-                        <!-- <a href="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
-                            class="glightbox video"><i class="lni lni-play"></i></a> -->
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-12 col-12">
-                    <!-- content-1 start -->
-                    <div class="content-right">
-                        <!-- <h2>당신의 상태</h2> -->
-                        <br>
-
-                        <p>
-                            3. 공부 (행 17:11)
-                        </p>
-                        <p>
-                            성경 읽기가 말씀에 대한 전체적인 시야를 갖게 해준다면, 성경 공부는 말씀을 더욱 깊이 있게 깨닫도록 해줍니다.
-                        </p>
-                        <p>
-                            4. 암송 (시 119:9,11)
-                        </p>
-                        <p>
-                            암송해 둔 말씀은 우리의 영적 전쟁을 승리로 이끄는 훌륭한 무기가 되며, 또한 전도와 양육에서 다른 사람들을 때에 맞는 말씀으로 돕는 데에 아주 유익합니다.
-                        </p>
-                        <p>
-                            5. 묵상 (시 1:2,3)
-                        </p>
-                        <p>
-                            묵상은 말씀의 의미를 깊이 생각하고 되새기며 삶에 적용하는 것입니다. 우리는 묵상을 통해 삶을 변화시키는 말씀의 능력을 경험하게 됩니다.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </section>    
-
-    <!-- Start About Area -->
-    <section class="about-us section">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">다섯가지 섭취 방법을 균형 있게</h2>
-                        
-                    </div>
-                </div>
-            </div>
+    </div>
+    <!--/ End Shopping Cart -->
 
 
-            <div class="row align-items-center">
-                
-                <div class="col-lg-6 col-md-12 col-12">
-                    <div class="content-left" style="text-align: center;">
-                        <img src="images/resourses/word-hand-2.png" alt="#" style="width:85%;">
-                        
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-12 col-12">
-                    <!-- content-1 start -->
-                    <div class="content-right">
-                        <!-- <h2>인간의 힘으로 구원받지 못함</h2> -->
-                        <!-- <br> -->
-                        <p>
-                            성경 책을 한 손으로 잡아 보십시오. 다섯 손가락이 모두 필요하지 않습니까? 말씀 섭취도 이와 같이 다섯 가지 방법을 모두 사용해야 합니다. 특히 엄지 손가락이 물건을 힘 있게 잡는 데에 중요한 역할을 하듯이 엄지에 해당하는 묵상은 듣기, 읽기, 공부, 암송과 더불어서 말씀을 풍성히 섭취하는 데에 대단히 중요합니다.
-                        </p>                                             
-                    </div>
-                </div>
-            </div>  
-
-        </div>
-    </section>
+    
 
     <!-- Start Footer Area -->
     <footer class="footer">
@@ -662,7 +832,7 @@
                                 <h3>The Korea NavPress</h3>
                                 <ul>
                                     <li>대표전화: 02-333-3333</li>
-                                    <li>구인안내: 02-337-3307</li>
+                                    <li>구입안내: 02-337-3307</li>
                                 </ul>
                             </div>
                             <!-- End Single Widget -->
@@ -715,11 +885,15 @@
 
     <!-- ========================= JS here ========================= -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/glightbox.min.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript">
         //========= Hero Slider 
+        
+
         //======== Brand Slider
+       
 
         //======== 모바일 상단 검색
         function openSearchBar() {
