@@ -89,7 +89,7 @@
   margin-bottom: 100px;
 }
 .pinned-image__quote blockquote p {
-  font-size: 18px;    /* 설명 글씨 */
+  font-size: 20px;    /* 설명 글씨 */
   line-height: 1.6;
   max-width: 1024px;
 }
@@ -100,7 +100,7 @@
   content: .pinned-image__quote blockquote p:after rdquo;
 } */
 .pinned-image__quote-author {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
 }
 .pinned-image__quote-role {
