@@ -26,6 +26,10 @@
   max-width: 900px;
 }
 
+.bookguide {  
+  padding-bottom : 0px;
+}
+
 .pinned-image {
   color: white;
   display: flex;
@@ -33,6 +37,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
+  
 }
 .pinned-image--small {
   height: 65vh;
@@ -44,10 +49,12 @@
   background: rgba(255, 255, 255, 0.5);
 }
 .pinned-image__container {
-  padding-top: 58%;
+  
+  /* padding-top: 58%;   */
   position: relative;
   transform: scale(0.75);
-  width: 100%;
+  width: 90%;             /* 100% */
+  
 }
 .pinned-image__container-overlay {
   background: rgba(0, 0, 0, 0.6);
@@ -79,21 +86,21 @@
   transform: translate3d(-50%, -50%, 0);
 }
 .pinned-image__quote blockquote {
-  margin-bottom: 75px;
+  margin-bottom: 100px;
 }
 .pinned-image__quote blockquote p {
-  font-size: 20px;
-  line-height: 1.5;
-  max-width: 800px;
+  font-size: 24px;    /* 설명 글씨 */
+  line-height: 1.6;
+  max-width: 1024px;
 }
-.pinned-image__quote blockquote p:before {
+/* .pinned-image__quote blockquote p:before {
   content: .pinned-image__quote blockquote p:before ldquo;
 }
 .pinned-image__quote blockquote p:after {
   content: .pinned-image__quote blockquote p:after rdquo;
-}
+} */
 .pinned-image__quote-author {
-  font-size: 24px;
+  font-size: 48px;
   font-weight: 700;
 }
 .pinned-image__quote-role {
