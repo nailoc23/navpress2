@@ -14,15 +14,48 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/LineIcons.3.0.css" />
     <link rel="stylesheet" href="css/tiny-slider.css" />
+
+    <style>
+    .tns-controls button {
+        background: none !important;
+        border: none;
+        color: #333;
+        font-size: 32px;
+        cursor: pointer;
+        padding: 10px;
+        opacity: 1 !important;
+        }
+
+        .tns-controls button:hover {
+        background: none !important;
+        color: #000;
+        }
+
+        .tns-controls {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+        z-index: 10;
+        pointer-events: none;
+        }
+
+        .tns-controls button {
+        pointer-events: all;
+        }
+
+        .hero-slider {
+        touch-action: pan-y;  /* 또는 none (수직 스크롤도 막으려면) */
+        }
+    </style>
+    
     <link rel="stylesheet" href="css/glightbox.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/main_index.css">
 
     <link rel="stylesheet" href="css/scrolltrigger.css">
-
-    <style>
-        
-    </style>
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -30,6 +63,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <style>
+        
         .swiper {
             width: 100%;
             padding-top: 50px;
@@ -45,9 +79,7 @@
             overflow: hidden;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
-
-
-
+        
         
     </style>
    
@@ -63,6 +95,7 @@
     <![endif]-->
 
     <!-- Preloader -->
+    <!--
     <div class="preloader">
         <div class="preloader-inner">
             <div class="preloader-icon">
@@ -71,6 +104,7 @@
             </div>
         </div>
     </div>
+-->
     <!-- /End Preloader -->
 
     <!-- Start Header Area -->
@@ -433,15 +467,18 @@
 
     <!-- Start Hero Area -->
     <section class="hero-area">
+        
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-12 custom-padding-right">
+
+                <div class="col-lg-12 col-12 custom-padding-right">
                     <div class="slider-head">
                         <!-- Start Hero Slider -->
                         <div class="hero-slider">
+
                             <!-- Start Single Slider -->
-                            <div class="single-slider"
-                                style="background-image: url(images/hero/nature6_800x500.jpg);">
+                            <div class="single-slider" id="video-slide"
+                                style="background-image: url(images/hero/nature1_1024x576.jpg);">
                                 <div class="content">
                                     <h2>
                                         <!-- <span>No restocking fee ($35 savings)</span> -->
@@ -456,21 +493,10 @@
                                 </div>
                             </div>
                             <!-- End Single Slider -->
+
                             <!-- Start Single Slider -->
-                            <div class="single-slider"
-                                style="background-image: url(images/hero/nature5_800x500.jpg);">
-                                <div class="content">
-                                    <h2>
-                                        <!-- <span>Big Sale Offer</span> -->
-                                        <span>로마서 5:8</span>
-                                    </h2>
-                                    <p>우리가 아직 죄인 되었을 때 그리스도께서 우리를 위하여 죽으심으로.</p>
-                                    <!-- <h3><span>Combo Only:</span> $590.00</h3> -->
-                                    <!-- <div class="button">
-                                        <a href="product-grids.html" class="btn">Shop Now</a>
-                                    </div> -->
-                                </div>
-                            </div>
+                            
+
                             <!-- End Single Slider -->
                         </div>
                         <!-- End Hero Slider -->
@@ -478,7 +504,9 @@
                 </div>
 
                 
+                <!--
                 <div class="col-lg-4 col-12">
+
                     <div class="row">
                         <div class="col-lg-12 col-md-6 col-12 md-custom-padding">
                             
@@ -486,30 +514,34 @@
                                 style="background-image: url('images/hero/nature_370x250.jpg');">
                                 <div class="content">
                                     <h2>
-                                        <!-- <span>New line required</span> -->
+                                        <span>New line required</span>
                                         하나님의 사랑안에서 예수님의 제자가 되십시오
                                     </h2>
-                                    <!-- <h3>$259.99</h3> -->
+                                    <h3>$259.99</h3>
                                 </div>
                             </div>
                             
                         </div>
+
                         <div class="col-lg-12 col-md-6 col-12">
                             
                             <div class="hero-small-banner style2">
                                 <div class="content">
-                                    <!-- <h2>Weekly Sale!</h2> -->
+                                    <h2>Weekly Sale!</h2>
                                     <p>마11:28~29 수고하고 무거운 짐진 자들아 다 내게로 오라 내가 너희를 쉬게 하리라
                                         * 나는 마음이 온유하고 겸손하니 나의 멍에를 메고 내게 배우라 그러면 너희 마음이 쉼을 얻으리니</p>
-                                    <!-- <div class="button">
+                                    
+                                        <div class="button">
                                         <a class="btn" href="product-grids.html">Shop Now</a>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                            
                         </div>
+
                     </div>
                 </div>
+                -->
                
 
             </div>
@@ -969,9 +1001,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h2>새로 올라온 글</h2>
-                        <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form.</p> -->
+                        <h2>Our Latest News</h2>
+                         <p style="font-size: 16px;">새로 올라온 우리의 글입니다</p>
                     </div>
                 </div>
             </div>
@@ -1314,6 +1345,58 @@
     <script  src="js/scrolltrigger.js"></script>
 
     <script type="text/javascript">
+
+        //========= download video 
+        document.addEventListener("DOMContentLoaded", function () {
+            const slide = document.getElementById("video-slide");
+            const videoUrl = "movies/nature_background_1.mp4";
+
+            // slide.innerHTML = `<div class="preloader">
+            //         <div class="preloader-inner">
+            //             <div class="preloader-icon">
+            //                 <span></span>
+            //                 <span></span>
+            //             </div>
+            //         </div>
+            //     </div>`;
+
+            // 1. 동영상 로드 전 임시 이미지 표시 중
+            slide.style.backgroundImage = "url('images/hero/nature1_1024x576.jpg')";
+
+            // 2. AJAX(fetch)로 비동기적으로 동영상 로드
+            fetch(videoUrl, { method: "GET" })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("비디오 로드 실패");
+                    }
+                    return response.blob(); // 파일 데이터(blob)로 변환
+                })
+                .then(blob => {
+                    // 3. blob을 동영상 URL로 변환
+                    const videoObjectURL = URL.createObjectURL(blob);
+
+                    // 4. <video> 요소를 만들어서 slide 안에 삽입
+                    slide.innerHTML = `
+                        <video autoplay muted loop playsinline
+                            style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+                            <source src="${videoObjectURL}" type="video/mp4">
+                            
+                        </video>
+                        <div class="content">
+                            <h2>                                        
+                                <span>요한복음 3:16</span>
+                            </h2>
+                            <p>하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니.
+                                </p>
+                            
+                        </div>
+                    `;
+                })
+                .catch(error => {
+                    console.error("비디오 로딩 중 오류:", error);
+                });
+        });
+
         //========= Hero Slider 
         tns({
             container: '.hero-slider',
@@ -1337,7 +1420,7 @@
                 depth: 100,
                 modifier: 1,
                 slideShadows: true,
-                },
+            },
 
             grabCursor: true,
             centeredSlides: true,
@@ -1359,6 +1442,7 @@
             prevEl: ".swiper-button-prev",
             },
         });
+        
 
         //======== 모바일 상단 검색
         function openSearchBar() {
