@@ -477,14 +477,14 @@
                         <div class="hero-slider">
 
                             <!-- Start Single Slider -->
-                            <div class="single-slider" id="video-slide"
+                            <div class="single-slider" id="video-slide-1"
                                 style="background-image: url(images/hero/nature1_1024x576.jpg);">
                                 <div class="content">
                                     <h2>
                                         <!-- <span>No restocking fee ($35 savings)</span> -->
                                         <span>요한복음 3:16</span>
                                     </h2>
-                                    <p>하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니.
+                                    <p>하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니.</p>
                                         <!-- incididunt ut labore et dolore magna aliqua.</p>
                                     <h3><span>Now Only</span> $320.99</h3> -->
                                     <!-- <div class="button">
@@ -495,7 +495,14 @@
                             <!-- End Single Slider -->
 
                             <!-- Start Single Slider -->
-                            
+                            <!-- 두 번째 슬라이드 -->
+                            <div class="single-slider" id="video-slide-2"
+                                style="background-image: url('images/hero/nature2_1024x576.jpg');">
+                                <div class="content">
+                                    <h2><span>시편 23:1</span></h2>
+                                    <p>여호와는 나의 목자시니 내가 부족함이 없으리로다.</p>
+                                </div>
+                            </div>
 
                             <!-- End Single Slider -->
                         </div>
@@ -1347,9 +1354,7 @@
     <script type="text/javascript">
 
         //========= download video 
-        document.addEventListener("DOMContentLoaded", function () {
-            const slide = document.getElementById("video-slide");
-            const videoUrl = "movies/nature_background_1.mp4";
+        // document.addEventListener("DOMContentLoaded", function () {
 
             // slide.innerHTML = `<div class="preloader">
             //         <div class="preloader-inner">
@@ -1360,10 +1365,13 @@
             //         </div>
             //     </div>`;
 
-            // 1. 동영상 로드 전 임시 이미지 표시 중
-            slide.style.backgroundImage = "url('images/hero/nature1_1024x576.jpg')";
+            //const slide = document.getElementById("video-slide");
+            //const videoUrl = "movies/nature_background_1.mp4";            
+            //slide.style.backgroundImage = "url('images/hero/nature1_1024x576.jpg')";
+            
 
             // 2. AJAX(fetch)로 비동기적으로 동영상 로드
+            /*
             fetch(videoUrl, { method: "GET" })
                 .then(response => {
                     if (!response.ok) {
@@ -1395,21 +1403,109 @@
                 .catch(error => {
                     console.error("비디오 로딩 중 오류:", error);
                 });
+            */
+
+        document.addEventListener("DOMContentLoaded", async function () {
+            const slides = [
+                { id: "video-slide-1", image: "images/hero/nature1_1024x576.jpg", video: "movies/nature_background_1.mp4" },
+                { id: "video-slide-2", image: "images/hero/nature2_1024x576.jpg", video: "movies/nature_background_2.mp4" },
+            ];
+
+            await Promise.all(slides.map(async (s) => {
+                const slide = document.getElementById(s.id);
+                slide.style.backgroundImage = `url('${s.image}')`;
+
+                const response = await fetch(s.video);
+                const blob = await response.blob();
+                const videoURL = URL.createObjectURL(blob);
+                const content = slide.querySelector(".content").outerHTML;
+
+                slide.innerHTML = `
+                    <video autoplay muted loop playsinline preload="metadata"
+                        style="width:100%; height:100%; object-fit:cover;">
+                        <source src="${videoURL}" type="video/mp4">
+                    </video>
+                    ${content}
+                `;
+            }));
+
+            const tyslider = tns({
+                container: '.hero-slider',
+                slideBy: 'page',
+                autoplay: true,
+                autoplayButtonOutput: false,
+                mouseDrag: true,
+                gutter: 0,
+                items: 1,
+                nav: false,
+                controls: true,
+                controlsText: ['<i class="lni lni-chevron-left"></i>', '<i class="lni lni-chevron-right"></i>'],
+            });
+
+            
+            // --- 기존 tns 초기화 이후에 넣으세요 ---
+            function pauseAllVideos() {
+            document.querySelectorAll('.tns-item video').forEach(v => {
+                try { v.pause(); } catch(e){}
+            });
+            }
+
+            function playActiveVideoWithGuard() {
+            // 활성(보이는) 슬라이드들 (tiny-slider는 상황에 따라 여러 active를 가질 수 있음)
+            const activeSlides = document.querySelectorAll('.tns-slide-active');
+
+            // 모든 비디오를 순회하며 "보이는 비디오"만 재생 시도
+            document.querySelectorAll('.tns-item video').forEach(v => {
+                const isActive = Array.from(activeSlides).some(slide => slide.contains(v));
+                if (!isActive) return;
+
+                // 이미 재생중이면 아무것도 안함
+                if (!v.paused && !v.ended) return;
+
+                // 준비상태가 충분하면 play, 아니면 canplay 이벤트에 연결
+                if (v.readyState >= 3) { // HAVE_FUTURE_DATA / HAVE_ENOUGH_DATA 대체로 ok
+                v.play().then(() => {
+                    // 성공: 아무것도 안함
+                }).catch(err => {
+                    // 실패하면 짧게 재시도 (브라우저의 일시적 거부 대응)
+                    console.warn('video.play() rejected, retrying:', err);
+                    setTimeout(() => { v.play().catch(()=>{}); }, 200);
+                });
+                } else {
+                // 아직 로드 안 된 경우 이벤트로 재생 시도
+                const onCan = () => {
+                    v.removeEventListener('canplay', onCan);
+                    v.play().catch(()=>{});
+                };
+                v.addEventListener('canplay', onCan);
+                }
+            });
+            }
+
+            // 이벤트 바인딩: transitionStart에서는 모든 비디오 일단 멈춤
+            tyslider.events.on('transitionStart', () => {
+            pauseAllVideos();
+            });
+
+            // transitionEnd에서는 약간 지연을 주고 활성 비디오를 재생
+            tyslider.events.on('transitionEnd', () => {
+            // class 업데이트/클론 전환이 완전히 끝나는 것을 보장하기 위해 소폭 대기
+            setTimeout(() => {
+                pauseAllVideos();
+                playActiveVideoWithGuard();
+            }, 60); // 60ms — 필요하면 100~200으로 늘려 테스트
+            });
+
+            // 초기 로드 시에도 한번 재생 시도
+            setTimeout(() => {
+            pauseAllVideos();
+            playActiveVideoWithGuard();
+            }, 800);
+
+
         });
 
-        //========= Hero Slider 
-        tns({
-            container: '.hero-slider',
-            slideBy: 'page',
-            autoplay: true,
-            autoplayButtonOutput: false,
-            mouseDrag: true,
-            gutter: 0,
-            items: 1,
-            nav: false,
-            controls: true,
-            controlsText: ['<i class="lni lni-chevron-left"></i>', '<i class="lni lni-chevron-right"></i>'],
-        });
+
 
         //======== Brand Slider 
         const swiper = new Swiper(".blogSwiper", {
@@ -1442,6 +1538,8 @@
             prevEl: ".swiper-button-prev",
             },
         });
+
+        
         
 
         //======== 모바일 상단 검색
