@@ -1448,6 +1448,29 @@
                 { id: "video-slide-3", image: "images/hero/nature3_1024x576.jpg", video: "movies/nature_background_3.mp4" },
             ];
 
+            // 이미지 먼저 표시
+            slides.forEach((s) => {
+                const slide = document.getElementById(s.id);
+                slide.style.backgroundImage = `url('${s.image}')`;
+                slide.style.backgroundSize = "cover";
+                slide.style.backgroundPosition = "center";
+            });
+
+            const tyslider = tns({
+                container: '.hero-slider',
+                slideBy: 'page',
+                autoplay: true,
+                autoplayButtonOutput: false,
+                mouseDrag: true,
+                gutter: 0,
+                items: 1,
+                nav: false,
+                controls: true,
+                controlsText: ['<i class="lni lni-chevron-left"></i>', '<i class="lni lni-chevron-right"></i>'],
+
+                speed: 800, // 0.8초 = CSS와 일치
+            });
+
             await Promise.all(slides.map(async (s) => {
                 const slide = document.getElementById(s.id);
                 slide.style.backgroundImage = `url('${s.image}')`;
@@ -1464,23 +1487,7 @@
                     </video>
                     ${content}
                 `;
-            }));        
-                    
-
-            const tyslider = tns({
-                container: '.hero-slider',
-                slideBy: 'page',
-                autoplay: true,
-                autoplayButtonOutput: false,
-                mouseDrag: true,
-                gutter: 0,
-                items: 1,
-                nav: false,
-                controls: true,
-                controlsText: ['<i class="lni lni-chevron-left"></i>', '<i class="lni lni-chevron-right"></i>'],
-
-                speed: 800, // 0.8초 = CSS와 일치
-            });
+            }));                                
 
             
             // --- 기존 tns 초기화 이후에 넣으세요 ---
