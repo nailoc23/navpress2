@@ -509,7 +509,6 @@
                             <!-- End Single Slider -->
 
                             <!-- Start Single Slider -->
-                            <!-- 두 번째 슬라이드 -->
                             <div class="single-slider" id="video-slide-2"
                                 style="background-image: url('images/hero/nature2_1024x576.jpg');">
                                 <div class="content">
@@ -517,8 +516,18 @@
                                     <p>여호와는 나의 목자시니 내가 부족함이 없으리로다.</p>
                                 </div>
                             </div>
-
                             <!-- End Single Slider -->
+
+                            <!-- Start Single Slider -->
+                            <div class="single-slider" id="video-slide-3"
+                                style="background-image: url('images/hero/nature3_1024x576.jpg');">
+                                <div class="content">
+                                    <h2><span>딤후 2:15</span></h2>
+                                    <p>네가 진리의 말씀을 옳게 분변하며 부끄러울 것이 없는 일군으로 인정된 자로 자신을 하나님 앞에 드리기를 힘쓰라.</p>
+                                </div>
+                            </div>
+                            <!-- End Single Slider -->
+
                         </div>
                         <!-- End Hero Slider -->
                     </div>
@@ -1423,6 +1432,7 @@
             const slides = [
                 { id: "video-slide-1", image: "images/hero/nature1_1024x576.jpg", video: "movies/nature_background_1.mp4" },
                 { id: "video-slide-2", image: "images/hero/nature2_1024x576.jpg", video: "movies/nature_background_2.mp4" },
+                { id: "video-slide-3", image: "images/hero/nature3_1024x576.jpg", video: "movies/nature_background_3.mp4" },
             ];
 
             await Promise.all(slides.map(async (s) => {
